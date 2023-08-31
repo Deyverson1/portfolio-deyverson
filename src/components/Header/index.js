@@ -4,6 +4,7 @@ export const HeaderStyle = styled.header`
     display: flex;
     /* align-items: center; */
     padding: 10px 20px;
+    font-family: 'Poppins';
 `
 export const Nav = styled.nav`
     width: 100%;
@@ -25,8 +26,12 @@ export const NavLinks = styled.div`
     justify-content: space-evenly;
     width: 100%;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 `
 
 export const P = styled.p`
   padding-left: 1rem;
+  font-size: .8125rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
 `
