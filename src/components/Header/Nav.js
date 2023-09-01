@@ -27,7 +27,7 @@ export default function CustomSeparator() {
     <Link
       underline="hover"
       key="2"
-      color="#444444"
+      color="#000000"
       font-family='Poppins'
       href="/material-ui/getting-started/installation/"
       fontFamily={'Poppins'}
