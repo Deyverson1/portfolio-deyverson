@@ -29,7 +29,7 @@ export default function CustomSeparator() {
       key="2"
       color="#000000"
       font-family='Poppins'
-      href="/material-ui/getting-started/installation/"
+      href="<Skills/>"
       fontFamily={'Poppins'}
       fontSize={'.8125rem'}
       letterSpacing={'0.0625rem'}
@@ -47,7 +47,7 @@ export default function CustomSeparator() {
       letterSpacing={'0.0625rem'}
       textTransform={'uppercase'}
     >
-      Portfolio
+      Proyectos
     </Link>,
     <Link
       underline="hover" 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, SkillsContent, Title, SkillSection } from ".";
+import { Card, SkillsContent, Title, SkillSection, Img, H3 } from ".";
 
 
 function Skills() {
@@ -8,18 +8,18 @@ function Skills() {
         <Title>Skills</Title>
         <SkillsContent>
             <Card>
-                <img src="" alt="" />
-                <h3>Optimizacion</h3>
+                <Img src="/img/programacion-web.png" alt="" />
+                <H3>Optimizacion</H3>
                 <p>Buscar el mejor rendimiento en todos los sentidos </p>
             </Card>
             <Card>
-                <img src="" alt="" />
-                <h3>Escalabilidad</h3>
+                <Img src="/img/codificacion-.png" alt="" />
+                <H3>Escalabilidad</H3>
                 <p>Programar entornos adaptables acordes a los requerimientos del proyectos</p>
             </Card>
             <Card>
-                <img src="" alt="" />
-                <h3>Escalabilidad</h3>
+                <Img src="/img/datos.png" alt="" />
+                <H3>Escalabilidad</H3>
                 <p>Programar entornos adaptables acordes a los requerimientos del proyectos</p>
             </Card>
         </SkillsContent>

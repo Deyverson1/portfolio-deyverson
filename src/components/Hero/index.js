@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const HeroContent = styled.section`
     display: flex;
     justify-content: space-evenly;
-    margin: 4rem 50px;
+    margin: 8rem 50px;
 `
 export const Name = styled.h1`
     font-size: 55px;
@@ -36,9 +36,12 @@ export const Poster = styled.section`
     width: 500px;
     height: 300px;
     transition: box-shadow .1s ;
-    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1),
-    -10px -10px 10px 10px rgba(0,0,0,0.1);
+    /* box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1),
+    -10px -10px 10px 10px rgba(0,0,0,0.1); */
     background-size: cover;
+    &:hover{
+        box-shadow: 0px 0px 50px rgba(0,0,0,1);
+    }
 `
 export const ImgHero = styled.img`
     width: 100%;
