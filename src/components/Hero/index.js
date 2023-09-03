@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const HeroContent = styled.section`
     display: flex;
     justify-content: space-evenly;
-    margin: 8rem 50px;
+    margin: 6rem 0;
 `
 export const Name = styled.h1`
     font-size: 55px;
@@ -19,7 +19,6 @@ export const Profession = styled.h2`
 export const Goat = styled.span`
     color: #4169E1;
 ` 
-
 export const Afirmacion = styled.h3`
     font-size: 18px;
     font-weight: 400;
@@ -36,11 +35,10 @@ export const Poster = styled.section`
     width: 500px;
     height: 300px;
     transition: box-shadow .1s ;
-    /* box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1),
-    -10px -10px 10px 10px rgba(0,0,0,0.1); */
     background-size: cover;
+    
     &:hover{
-        box-shadow: 0px 0px 50px rgba(0,0,0,1);
+        box-shadow: 0px 0px 50px rgba(0,0,0,01);
     }
 `
 export const ImgHero = styled.img`
@@ -49,5 +47,9 @@ export const ImgHero = styled.img`
     border-radius: 3px;
     border-color: rgba(0,0,0,0.1);
     object-fit: cover; 
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+    &:hover{
+        box-shadow: 0px 0px 50px rgba(0,0,0,0) ;
+    }
 `
 

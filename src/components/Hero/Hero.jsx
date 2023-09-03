@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Poster, HeroContent, Name, Goat, Profession, Afirmacion, ImgHero, ImgPoster } from ".";
-
+// Effecto de la imagen + estructura 
 function Hero() {
     useEffect(() => {
         const el = document.getElementById('poster');
@@ -29,12 +29,10 @@ function Hero() {
                 <br />¡El universo digital aguarda nuestra imaginacion sin limites!</Afirmacion>
             </div>
             <ImgPoster>
-                <Poster id="poster"> <ImgHero src="/img/ImgHeroAstronaut.jpg" alt="" /> </Poster>
+                <Poster id="poster"> <ImgHero src="/img/code.jpg" alt="Imagen Code" /> </Poster>
             </ImgPoster>
             
         </HeroContent>
     );
 }
-
 export default Hero;
-

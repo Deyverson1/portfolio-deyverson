@@ -2,12 +2,6 @@ import * as React from 'react';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import styled from 'styled-components';
-
-export const Styles = styled.p`
-  font-family: 'Poppins', sans-serif;
-  color: #000000;
-`
 
 export default function CustomSeparator() {
 
@@ -74,9 +68,8 @@ export default function CustomSeparator() {
       Contact
     </Link>,
 
-
+    <Link><></></Link>
   ];
-
   return (
     <Stack spacing={2}>
       <Breadcrumbs separator=" " aria-label="breadcrumb">
