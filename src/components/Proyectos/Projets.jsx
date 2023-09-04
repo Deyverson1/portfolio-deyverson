@@ -1,23 +1,32 @@
 import React from "react"
-import ImgMediaCard from "./Project"
-import { DivContent, Content, H1} from "./Index"
+import styled from "styled-components";
+import CardMain from "./Project";
 
 function Projects(){
     return(
         <Content>
             <H1>Projects</H1>
             <DivContent>
-                <ImgMediaCard/>
-                <ImgMediaCard/>
-                <ImgMediaCard/>
-                <ImgMediaCard/>
-                <ImgMediaCard/>
+                <CardMain/>
+                
             </DivContent>
         </Content>
-        
-        
-        
     )
 } 
-
+// Styles
+const Content = styled.section`
+    padding: 5rem 2rem;
+`
+const H1 = styled.h2`
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+    letter-spacing: 0.0625rem;
+    font-weight: 500;
+`
+const DivContent = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+`
 export default Projects

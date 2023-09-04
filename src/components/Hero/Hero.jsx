@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styled from 'styled-components';
 import { Poster, HeroContent, Name, Goat, Profession, Afirmacion, ImgHero, ImgPoster } from ".";
 // Effecto de la imagen + estructura 
 function Hero() {
@@ -24,7 +25,7 @@ function Hero() {
         <HeroContent>
             <div>
                 <Name>Hi, I'm <Goat>Deyverson Herrera</Goat></Name>
-                <Profession><Goat>a </Goat>Frontend Developer</Profession>
+                <Profession><Goat>a </Goat>Frontend Developer<Blinker>|</Blinker></Profession>
                 <Afirmacion>Como un tejedor de codigos en el vasto lienzo digital, encuentro inspiracion <br /> en la tecnologia para dar vida a mundos completamente nuevos. 
                 <br />¡El universo digital aguarda nuestra imaginacion sin limites!</Afirmacion>
             </div>
@@ -35,4 +36,21 @@ function Hero() {
         </HeroContent>
     );
 }
+const Blinker = styled.span` 
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-duration: 1s;
+    //Basic styling  
+    display: inline-block;
+    padding-left: 2px;
+    width: 8px;
+    height: 100px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(white,.3);
+    background: $y;
+    @keyframes blinker { 
+    from { opacity: 1.0; } to { opacity: 0.0; }
+  }
+`
 export default Hero;

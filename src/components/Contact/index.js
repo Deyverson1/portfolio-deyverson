@@ -11,6 +11,7 @@ export default function MultilineTextFields() {
         display: flex;
         flex-direction: column;
         /* width: 100%; */
+        align-items: center;
     `
     return (
         <Box
@@ -43,7 +44,6 @@ export default function MultilineTextFields() {
                 />
                 <Boton/>
             </Container>
-
         </Box>
     );
 }

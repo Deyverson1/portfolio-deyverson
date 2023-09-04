@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const HeroContent = styled.section`
     display: flex;
     justify-content: space-evenly;
-    margin: 6rem 0;
+    margin: 7rem 0;
 `
 export const Name = styled.h1`
     font-size: 55px;
@@ -12,9 +12,10 @@ export const Name = styled.h1`
     margin: 0;
 `
 export const Profession = styled.h2`
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 42px;
     font-weight: 500;
+    margin-bottom: 0;
 `
 export const Goat = styled.span`
     color: #4169E1;
@@ -23,6 +24,7 @@ export const Afirmacion = styled.h3`
     font-size: 18px;
     font-weight: 400;
     color: #444444;
+    margin-top: 0; 
 `
 
 export const ImgPoster = styled.div`

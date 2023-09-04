@@ -2,6 +2,7 @@ import React from "react"
 import Icon from "./Icon.js";
 import CustomSeparator from "./Nav.js";
 import styled from "styled-components";
+import TemporaryDrawer from "./Temporary.jsx";
 // Funcion principal - Estilos al final
 function Header() {
   return (
@@ -14,6 +15,7 @@ function Header() {
         <NavLinks>
           <CustomSeparator/>
            <Icon/>
+           <TemporaryDrawer/>
         </NavLinks>
       </Nav>
     </HeaderStyle>

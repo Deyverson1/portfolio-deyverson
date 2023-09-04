@@ -7,11 +7,15 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact';
 import LinearProgres from './components/Linear/Linear';
 import Footer from './components/Footer/Footer';
+import styled from 'styled-components';
 
+const General = styled.div`
+  background-color: #f5f5f5;
+`
 
 function App() {
   return (
-    <div>
+    <General backgroundColor='#000000'>
       <Header/>
       <Hero/>
       <Skills/>
@@ -21,7 +25,7 @@ function App() {
       <Contact/>
       <LinearProgres/>
       <Footer/>
-    </div>
+    </General>
   );
 }
 

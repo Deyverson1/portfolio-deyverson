@@ -1,72 +1,84 @@
 import React from "react";
 import styled from "styled-components";
+import WebIcon from '@mui/icons-material/Web';
+import CodeIcon from '@mui/icons-material/Code';
+import LanguageIcon from '@mui/icons-material/Language';
+import { blue } from '@mui/material/colors'
+
 
 function Skills() {
     return ( <SkillSection>
         <Title>Skills</Title>
         <SkillsContent>
             <Card>
-                <Img src="/img/programacion-web.png" alt="" />
+                <LanguageIcon fontSize="large" sx={{ color: blue[500] }} className="icon"/>
                 <H3>Optimizacion</H3>
-                <p>Perfeccionar la eficiencia y el rendimiento de las aplicaciones web para brindar a los usuarios una experiencia rapida y fluida.</p>
+                <P>Perfeccionar la eficiencia y el rendimiento de las aplicaciones web para brindar a los usuarios una experiencia rapida y fluida.</P>
+               
             </Card>
             <Card>
-                <Img src="/img/codificacion-.png" alt="" />
+                <WebIcon fontSize="large" sx={{ color: blue[500] }} className="icon"/>
                 <H3>Responsive</H3>
-                <p>Desarrollo con capacidad para adaptarse de manera fluida y visualmente atractiva a diferentes tamaños de pantallas.</p>
+                <P>Desarrollo con capacidad para adaptarse de manera fluida y visualmente atractiva a diferentes tamaños de pantallas.</P>
             </Card>
             <Card>
-                <Img src="/img/datos.png" alt="" />
+                <CodeIcon fontSize='large' sx={{ color: blue[500] }} className="icon"/>
                 <H3>Mantenibilidad</H3>
-                <p>Codigo tanto interactivo como de facil comprension, que puede ser modificado y mantenido a largo plazo</p>
+                <P>Codigo tanto interactivo como de facil comprension, que puede ser modificado y mantenido a largo plazo</P>
             </Card>
         </SkillsContent>
         </SkillSection>
     )
 }
 // Styles
-
-
-const SkillSection = styled.section`
-    margin: 20px; 
-    padding-top: 3rem;
+const SkillSection = styled.section` 
+    margin: 8rem 2rem;
 `
-const Title = styled.h1`
+const Title = styled.h2`
     margin: 0;
     padding: 0;
     padding-left: 12px;
     letter-spacing: 0.0625rem;
+    font-weight: 500;
 `
 const SkillsContent = styled.section`
     display: flex;
     justify-content: space-between;
-
 `
+
 const Card = styled.div`
     border-radius: 7px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    padding: 0 2rem;
     width: 100%;
     height: 300px;
-    text-align: center;
+    text-align: start;
     margin: 12px;
-    border: 1px solid #444444;
+    border: 1px solid #4169E1;
     border-radius: 15px;
     transition: .5s;
     &:hover{
+        transition: .7s;
         background-color: #4169E1;
+        color: white;
+        cursor: pointer;
+        > .icon {
+            color: white;
+        }
     }
-`
-const Img = styled.img`
-    width: 15vh;
-    /* padding-top: 15px; */
 `
 const H3 = styled.h3`
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.0625rem;
-
+    margin-bottom: 0;
+    padding-bottom: 0;
 `
+const P =styled.p`
+    margin-top: .5rem;
+`
+
 export default Skills;

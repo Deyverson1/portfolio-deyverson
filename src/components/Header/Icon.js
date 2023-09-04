@@ -3,9 +3,7 @@ import SvgIcon from '@mui/material/SvgIcon';
 
 export default function Icon() {
     return (
-      <SvgIcon
-      
-          >
+      <SvgIcon>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutMeContainer, H1, SectionContainer, Profile, Description, Parrafo, H3, Learn, Img } from ".";
+import styled from "styled-components"
 
 function AboutMe() {
     return(
@@ -8,11 +8,11 @@ function AboutMe() {
             <SectionContainer>
                <Profile>
                     <h1>Deyverson Herrera Valencia</h1>
-                    <img src="/Img/Logo.png" alt="Foto Deyverson"></img>
+                    <Logo src="/Img/Logo.png" alt="Foto Deyverson"></Logo>
                 </Profile> 
                 <Description>
                     <Parrafo>
-                    I am a programmer focused on UI environment and interface development,
+                    I am a 20-year-old programmer focused on UI environment and interface development,
                     with extensive knowledge across various technologies that enable me to provide
                     diverse approaches tailored to the project's requirements. Supported by my
                     studies in Industrial Mechatronics, I always strive to find the most optimal way
@@ -33,7 +33,6 @@ function AboutMe() {
                         <Img src="img/angular.png" alt="Angular" />
                         <Img src="/img/vue.png" alt="Vue.js" />
                         <Img src="/img/c++.png" alt="Express.js" />
-                        
                     </Learn>
                 </Description>
             </SectionContainer>
@@ -41,4 +40,48 @@ function AboutMe() {
     )
 }
 
+//styles
+const AboutMeContainer = styled.section`
+    margin: 5rem 2rem
+`
+const H1 = styled.h1`
+    letter-spacing: 0.0625rem;
+    font-weight: 500;
+`
+const SectionContainer = styled.section`
+    display: flex;
+`
+const Profile = styled.div`
+    border: 1px solid #4169E1;
+    border-radius: 3rem;
+    text-align: center;
+`
+const Logo = styled.img`
+    width: 400px;
+`
+const Description = styled.div`
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+const Parrafo = styled.p`
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    width: 100%;
+`
+const H3 = styled.h3`
+    letter-spacing: 0.0625rem;
+    font-weight: 500;
+`
+const Learn = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+`
+const Img = styled.img`
+    width: 50px;
+    height: 50px;
+`
 export default AboutMe;
