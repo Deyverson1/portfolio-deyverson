@@ -78,7 +78,7 @@ const FormSignUp = () => {
 
   return (
     <form
-      action="https://formsubmit.co/a726ed0c7de5a8fb34cf9948a556c97d"
+      action="https://formsubmit.co/deyverson.contacto@gmail.com"
       method="POST"
       onSubmit={handleSubmit}
       className='form'
