@@ -16,6 +16,9 @@ function Projects(){
 // Styles
 const Content = styled.section`
     padding: 5rem 2rem;
+    @media screen and (max-width: 768px){
+        padding-bottom: 2rem;
+    }
 `
 const H1 = styled.h2`
     margin: 0;

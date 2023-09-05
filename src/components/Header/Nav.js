@@ -13,7 +13,7 @@ const navData = [
     name: 'Proyectos',
   },
   {
-    name: 'About Me'
+    name: 'About'
   },
   {
     name: 'Contact'

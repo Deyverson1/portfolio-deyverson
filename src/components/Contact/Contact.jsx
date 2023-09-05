@@ -5,14 +5,14 @@ import styled from "styled-components";
 function Contact() {
   return (
     <Box>
-      < FormSignUp/>
+      <FormSignUp/>
       <Aclaracion>
         <H2>Contacto</H2>
-        <p>
+        <P>
           ¿Deseas ponerte en contacto conmigo? <br />
           ¡Deja un mensaje y me pondre en contacto contigo! <br />
           O me puedes contactar por medio de deyverson.contacto@gmail.com
-        </p>
+        </P>
       </Aclaracion>
     </Box>
   );
@@ -22,6 +22,10 @@ const Box = styled.section`
   display: flex;
   justify-content: space-around;
   padding: 5rem 2rem;
+  @media screen and (max-width: 425px) {
+    flex-wrap: wrap-reverse;
+    padding: 3rem 2rem;
+  }
 `;
 const Aclaracion = styled.div`
   display: flex;
@@ -33,8 +37,26 @@ const Aclaracion = styled.div`
   margin-top: 0;
   padding-top: 0;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+  @media screen and (max-width: 768px){
+    width: 70vh;
+    margin-left: 1rem;
+  }
+  @media screen and (max-width: 425px){
+    margin-bottom: 2rem;
+  }
 `;
 const H2 = styled.h2`
   padding-top: 6rem;
+  @media screen and (max-width: 768px){
+    padding-top: 4rem
+  }
+  @media screen and (max-width: 425px){
+    padding-top: .5rem;
+  }
 `;
+const P = styled.p`
+  @media screen and (max-width: 425px){
+    padding-bottom: .5rem;
+  }
+`
 export default Contact;

@@ -33,6 +33,9 @@ function Skills() {
 // Styles
 const SkillSection = styled.section` 
     margin: 8rem 2rem;
+    @media screen and (max-width: 768px){
+        margin: 0 2rem;
+    }
 `
 const Title = styled.h2`
     margin: 0;
@@ -44,11 +47,10 @@ const Title = styled.h2`
 const SkillsContent = styled.section`
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 768px){
         flex-wrap: wrap;
     }
 `
-
 const Card = styled.div`
     border-radius: 7px;
     display: flex;

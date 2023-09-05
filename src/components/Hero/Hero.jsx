@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Poster, HeroContent, Name, Goat, Profession, Afirmacion, ImgHero, ImgPoster } from ".";
 import { Typewriter } from 'react-simple-typewriter'
+import styled from 'styled-components';
 // Effecto de la imagen + estructura 
 function Hero() {
     useEffect(() => {
@@ -26,7 +27,7 @@ function Hero() {
             <div>
                 <Name>Hi, I'm <Goat>Deyverson Herrera</Goat></Name>
                 {/* Frontend Developer<Blinker>|</Blinker> */}
-                <Profession><Goat>a</Goat> <Typewriter words={['Profesional Coder', 'Frontend Developer',]}
+                <Profession><Goat>a</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Frontend Developer',]}
                     loop={5}
                     cursor
                     cursorStyle='|'
@@ -35,8 +36,13 @@ function Hero() {
                     delaySpeed={1000}
                     /> 
                 </Profession>
-                <Afirmacion>Como un tejedor de codigos en el vasto lienzo digital, encuentro inspiracion <br /> en la tecnologia para dar vida a mundos completamente nuevos. 
+                <Afirmacion>Como un tejedor de codigos en el vasto lienzo digital, encuentro inspiracion en la tecnologia para dar vida a mundos completamente nuevos. 
                 <br />¡El universo digital aguarda nuestra imaginacion sin limites!</Afirmacion>
+                <Media>
+                <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.png" alt="Instagram" /></a>
+                <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.png" alt="GitHub" /></a>
+                <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkk.png" alt="Linkedin" /></a>
+                </Media>
             </div>
             <ImgPoster>
                 <Poster id="poster"> <ImgHero src="/img/code.jpg" alt="Imagen Code" /> </Poster>
@@ -45,4 +51,15 @@ function Hero() {
         </HeroContent>
     );
 }
+const Media = styled.div`
+    display: flex;
+    justify-content: center;   
+`
+const Img = styled.img`
+    width: 40px;
+    height: 40px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 1rem;
+`
 export default Hero;

@@ -28,7 +28,7 @@ function AboutMe() {
                         <Img src="/img/java.png" alt="JavaScript" />
                         <Img src="/img/react.png" alt="React" />
                         <Img src="/img/html.png" alt="Html & Css" />
-                        <Img src="/img/pngegg.png" alt="Node.js" />
+                        <Img src="/img/node.png" alt="Node.js" />
                         <Img src="/img/ts.png" alt="TypeScript" />
                         <Img src="img/angular.png" alt="Angular" />
                         <Img src="/img/vue.png" alt="Vue.js" />
@@ -42,7 +42,11 @@ function AboutMe() {
 
 //styles
 const AboutMeContainer = styled.section`
-    margin: 5rem 2rem
+    margin: 5rem 2rem;
+    @media screen and (max-width: 768px){
+        margin: 0 2rem;
+        padding-bottom: 1rem;
+    }
 `
 const H1 = styled.h1`
     letter-spacing: 0.0625rem;
@@ -50,7 +54,7 @@ const H1 = styled.h1`
 `
 const SectionContainer = styled.section`
     display: flex;
-    @media screen and (max-width:375px){
+    @media screen and (max-width: 768px){
         flex-direction: column;
     }
 `
@@ -61,7 +65,7 @@ const Profile = styled.div`
 `
 const Logo = styled.img`
     width: 400px;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 768px){
         display: none;
     }
 `
@@ -70,12 +74,19 @@ const Description = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media screen and (max-width: 425px){
+        padding: 1rem;
+    }
 `
 const Parrafo = styled.p`
     font-size: 18px;
     font-weight: 400;
     color: #444444;
     width: 100%;
+    @media screen and (max-width: 425px){
+        font-size: 16px;
+        margin: 0;
+    }
 `
 const H3 = styled.h3`
     letter-spacing: 0.0625rem;
@@ -89,5 +100,15 @@ const Learn = styled.div`
 const Img = styled.img`
     width: 50px;
     height: 50px;
+    @media screen and (max-width: 425px){
+        width: 42px;
+        height: 42px;
+        padding: 1rem;
+    }
+    @media screen and (max-width: 375px){
+        width: 40px;
+        height: 40px;
+        padding: .8rem;
+    }
 `
 export default AboutMe;

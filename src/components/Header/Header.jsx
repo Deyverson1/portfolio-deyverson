@@ -8,11 +8,13 @@ function Header() {
     <HeaderStyle>
       <Nav>
         <LogoSpace>
-          <Img src="/img/codigo.png" alt="Logo portafolio Deyverson"/>
+          <Img src="/img/code1.png" alt="Logo portafolio Deyverson"/>
           <P>Deyverson</P>
         </LogoSpace>
         <NavLinks>
-          <Navegador/>
+          <Div>
+            <Navegador/>
+          </Div> 
            <MenuIcon/>
         </NavLinks>
       </Nav>
@@ -23,15 +25,18 @@ function Header() {
 const HeaderStyle = styled.header`
   display: flex;
   padding: 1rem 5rem;
-  @media screen and (max-width: 375px){
-    padding: 0;
+  @media screen and (max-width: 768px){
+    padding: 1rem;
+  }
+  @media screen and (max-width: 425px){
+    padding: 1rem 2rem;
   }
 `
 const Nav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 425px){
     display: flex;
     align-items: center;
   }
@@ -41,6 +46,9 @@ const LogoSpace = styled.div`
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    @media screen and (max-width: 768px){
+      padding-left: 1rem;
+    }
 `
 const Img = styled.img`
   width: wrem;
@@ -53,7 +61,12 @@ const NavLinks = styled.div`
     align-items: center;
     font-family: 'Poppins', sans-serif;
     padding-right: 1rem;
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 425px){
+      padding-right: 0;
+    }
+`
+const Div = styled.div`
+    @media screen and (max-width: 425px){
       display: none;
     }
 `
@@ -62,5 +75,6 @@ const P = styled.p`
   font-size: .8125rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
+  padding-top: 3px;
 `
 export default Header;
