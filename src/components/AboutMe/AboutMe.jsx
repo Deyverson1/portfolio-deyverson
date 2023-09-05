@@ -8,7 +8,7 @@ function AboutMe() {
             <SectionContainer>
                <Profile>
                     <h1>Deyverson Herrera Valencia</h1>
-                    <Logo src="/Img/Logo.png" alt="Foto Deyverson"></Logo>
+                    <Logo src="/img/Logo.png" alt="Foto Deyverson"></Logo>
                 </Profile> 
                 <Description>
                     <Parrafo>
