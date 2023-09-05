@@ -50,6 +50,9 @@ const H1 = styled.h1`
 `
 const SectionContainer = styled.section`
     display: flex;
+    @media screen and (max-width:375px){
+        flex-direction: column;
+    }
 `
 const Profile = styled.div`
     border: 1px solid #4169E1;
@@ -58,6 +61,9 @@ const Profile = styled.div`
 `
 const Logo = styled.img`
     width: 400px;
+    @media screen and (max-width: 375px){
+        display: none;
+    }
 `
 const Description = styled.div`
     padding: 3rem;

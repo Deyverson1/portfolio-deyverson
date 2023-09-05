@@ -7,13 +7,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
 
-const StyledCard = styled(Card)`
-  margin: 2rem;
-`
-const StyledCardContent = styled(CardContent)`
-  
-`
-
 const cardData = [
   {
     title: 'Encriptador de texto',
@@ -48,16 +41,15 @@ export default function CardMain() {
             alt={`Image for ${card.title}`}
             height="140"
             image={card.image}
-            
           />
-          <StyledCardContent>
+          <CardContent>
             <Typography gutterBottom variant="h5" component="div" fontFamily='Poppins'>
               {card.title}
             </Typography>
             <Typography variant="body2" color="text.secondary" fontFamily='Poppins'>
               {card.description}
             </Typography>
-          </StyledCardContent>
+          </CardContent>
           <CardActions>
             <Button size="small" href={card.repoLink} target="_blank">
               Repositorio
@@ -71,3 +63,7 @@ export default function CardMain() {
     </>
   );
 }
+
+const StyledCard = styled(Card)`
+  margin: 2rem;
+`

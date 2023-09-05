@@ -1,8 +1,7 @@
 import React from "react"
-import Icon from "./Icon.js";
-import CustomSeparator from "./Nav.js";
+import MenuIcon from '@mui/icons-material/Menu';
+import Navegador from "./Nav.js";
 import styled from "styled-components";
-import TemporaryDrawer from "./Temporary.jsx";
 // Funcion principal - Estilos al final
 function Header() {
   return (
@@ -13,9 +12,8 @@ function Header() {
           <P>Deyverson</P>
         </LogoSpace>
         <NavLinks>
-          <CustomSeparator/>
-           <Icon/>
-           <TemporaryDrawer/>
+          <Navegador/>
+           <MenuIcon/>
         </NavLinks>
       </Nav>
     </HeaderStyle>
@@ -25,11 +23,18 @@ function Header() {
 const HeaderStyle = styled.header`
   display: flex;
   padding: 1rem 5rem;
+  @media screen and (max-width: 375px){
+    padding: 0;
+  }
 `
 const Nav = styled.nav`
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  @media screen and (max-width: 375px){
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+  }
 `
 const LogoSpace = styled.div`
     width: 100%;
@@ -48,6 +53,9 @@ const NavLinks = styled.div`
     align-items: center;
     font-family: 'Poppins', sans-serif;
     padding-right: 1rem;
+    @media screen and (max-width: 375px){
+      display: none;
+    }
 `
 const P = styled.p`
   padding-left: 1rem;

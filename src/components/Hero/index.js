@@ -30,6 +30,9 @@ export const Afirmacion = styled.h3`
 export const ImgPoster = styled.div`
     display: flex;
     align-items: center;
+    @media screen and (max-width: 375px){
+        display: none;
+    }
 `
 
 export const Poster = styled.section`

@@ -44,6 +44,9 @@ const Title = styled.h2`
 const SkillsContent = styled.section`
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 375px){
+        flex-wrap: wrap;
+    }
 `
 
 const Card = styled.div`

@@ -1,49 +1,126 @@
-import Box from '@mui/material/Box';
+import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
-import styled from 'styled-components';
-import Boton from './Button';
+import Button from '@mui/material/Button';
+import './style.css'
 
+const validateCustomName = (name) => {
+    const length = name.length;
+    if (length > 3) {
+        return true;
+    } else {
+        return false;
+    }
+};
+const validateCustomEmail = (email) => {
+    const length = email.length;
+    if (length > 8 && length < 50 && email.includes("@")) {
+        return true;
+    } else {
+        return false;
+    }
+};
 
+const validateCustomMessage = (message) => {
+    if(message === ''){
+        return false;
+    } else {
+        return true;
+    }  
+};
 
-export default function MultilineTextFields() {
+const FormSignUp = () => {
+  const [name, setName] = useState({ value: '', valid: null });
+  const [email, setEmail] = useState({ value: '', valid: null });
+  const [message, setMessage] = useState({ value: '', valid: null });
 
-    const Container = styled.div`
-        display: flex;
-        flex-direction: column;
-        /* width: 100%; */
-        align-items: center;
-    `
-    return (
-        <Box
-            component="form"
-            sx={{
-                '& .MuiTextField-root': { m: 1, width: '90vh' },
-            }}
-            noValidate
-            autoComplete="off"
-        >
-            <Container>
-                <TextField
-                    required
-                    label="Nombre"
-                    type='nombre'
-                    hideAsterisk
-                />
-                <TextField
-                    required
-                    label="Email"
-                    type='email'
-                />
-                <TextField
-                    required
-                    // id="outlined-multiline-static"
-                    label="Campo texto"
-                    multiline
-                    rows={8}
-                    type='texto'
-                />
-                <Boton/>
-            </Container>
-        </Box>
-    );
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Realiza las validaciones
+    const isNameValid = validateCustomName(name.value);
+    const isEmailValid = validateCustomEmail(email.value);
+    const isMessageValid = validateCustomMessage(message.value);
+
+    setName({ ...name, valid: isNameValid });
+    setEmail({ ...email, valid: isEmailValid });
+    setMessage({ ...message, valid: isMessageValid });
+
+    if (isNameValid && isEmailValid && isMessageValid) {
+      try {
+        const response = await fetch('https://formsubmit.co/ragvalhalla78@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+            message: message.value,
+          }),
+        });
+
+        if (response.ok) {
+          console.log('Datos enviados correctamente');
+          // Puedes realizar alguna acción adicional aquí, como limpiar los campos
+          setName({ value: '', valid: null });
+          setEmail({ value: '', valid: null });
+          setMessage({ value: '', valid: null });
+        } else {
+          console.error('Error al enviar datos');
+        }
+      } catch (error) {
+        console.error('Error al enviar datos:', error);
+      }
+    } else {
+      console.log("Malo");
+    }
+  };
+
+  return (
+    <form
+      action="https://formsubmit.co/a726ed0c7de5a8fb34cf9948a556c97d"
+      method="POST"
+      onSubmit={handleSubmit}
+      className='form'
+    >
+      <TextField
+        required
+        label="Nombre"
+        type="text"
+
+        className='inputo'
+        value={name.value}
+        error={name.valid === false}
+        helperText={name.valid === false && "Ingresa un nombre válido."}
+        onChange={(e) => setName({ value: e.target.value, valid: null })}
+      />
+      <TextField
+        required
+        label="Email"
+        type="email"
+        className='inputo'
+        value={email.value}
+        error={email.valid === false}
+        helperText={email.valid === false && "Ingrese un email válido."}
+        onChange={(e) => setEmail({ value: e.target.value, valid: null })}
+      />
+      <TextField
+        required
+        label="Campo texto"
+        className='inputo'
+        multiline
+        rows={8}
+        type="text"
+        value={message.value}
+        error={message.valid === false}
+        helperText={message.valid === false && "Ingresa un contenido válido."}
+        onChange={(e) => setMessage({ value: e.target.value, valid: null })}
+      />
+      <Button variant="contained" type="submit" className='button'>
+        Enviar
+      </Button>
+    </form>
+  );
+};
+
+export default FormSignUp;

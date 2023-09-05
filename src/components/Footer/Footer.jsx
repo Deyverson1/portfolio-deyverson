@@ -16,8 +16,6 @@ const Img = styled.img`
     padding-left: 1rem;
     padding-right: 1rem;
 `
-
-
 function Footer() {
     return(
         <Content>
