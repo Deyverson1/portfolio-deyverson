@@ -32,6 +32,7 @@ const FormSignUp = () => {
   const [name, setName] = useState({ value: '', valid: null });
   const [email, setEmail] = useState({ value: '', valid: null });
   const [message, setMessage] = useState({ value: '', valid: null });
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -60,11 +61,11 @@ const FormSignUp = () => {
         });
 
         if (response.ok) {
-          console.log('Datos enviados correctamente');
-          // Puedes realizar alguna acción adicional aquí, como limpiar los campos
+          console.log('                              Datos enviados correctamente                           ');
           setName({ value: '', valid: null });
           setEmail({ value: '', valid: null });
           setMessage({ value: '', valid: null });
+          setIsSuccess(true); 
         } else {
           console.error('Error al enviar datos');
         }
@@ -72,54 +73,59 @@ const FormSignUp = () => {
         console.error('Error al enviar datos:', error);
       }
     } else {
-      console.log("Malo");
+      console.log('Malo');
     }
   };
 
   return (
-    <form
-      action="https://formsubmit.co/deyverson.contacto@gmail.com"
-      method="POST"
-      onSubmit={handleSubmit}
-      className='form'
-    >
-      <TextField
-        required
-        label="Nombre"
-        type="text"
-
-        className='inputo'
-        value={name.value}
-        error={name.valid === false}
-        helperText={name.valid === false && "Ingresa un nombre válido."}
-        onChange={(e) => setName({ value: e.target.value, valid: null })}
-      />
-      <TextField
-        required
-        label="Email"
-        type="email"
-        className='inputo'
-        value={email.value}
-        error={email.valid === false}
-        helperText={email.valid === false && "Ingrese un email válido."}
-        onChange={(e) => setEmail({ value: e.target.value, valid: null })}
-      />
-      <TextField
-        required
-        label="Campo texto"
-        className='inputo'
-        multiline
-        rows={8}
-        type="text"
-        value={message.value}
-        error={message.valid === false}
-        helperText={message.valid === false && "Ingresa un contenido válido."}
-        onChange={(e) => setMessage({ value: e.target.value, valid: null })}
-      />
-      <Button variant="contained" type="submit" className='button'>
-        Enviar
-      </Button>
-    </form>
+    <div>
+      {isSuccess ? (
+        <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: '#4169e1', color: 'white', padding: '10px', borderRadius: '4px' }}>¡Formulario enviado con éxito!</div>
+      ) : (
+        <form
+          action="https://formsubmit.co/ragvalhalla78@gmail.com"
+          method="POST"
+          onSubmit={handleSubmit}
+          className="form"
+        >
+          <TextField
+            required
+            label="Nombre"
+            type="text"
+            className="inputo"
+            value={name.value}
+            error={name.valid === false}
+            helperText={name.valid === false && 'Ingresa un nombre válido.'}
+            onChange={(e) => setName({ value: e.target.value, valid: null })}
+          />
+          <TextField
+            required
+            label="Email"
+            type="email"
+            className="inputo"
+            value={email.value}
+            error={email.valid === false}
+            helperText={email.valid === false && 'Ingrese un email válido.'}
+            onChange={(e) => setEmail({ value: e.target.value, valid: null })}
+          />
+          <TextField
+            required
+            label="Campo texto"
+            className="inputo"
+            multiline
+            rows={8}
+            type="text"
+            value={message.value}
+            error={message.valid === false}
+            helperText={message.valid === false && 'Ingresa un contenido válido.'}
+            onChange={(e) => setMessage({ value: e.target.value, valid: null })}
+          />
+          <Button variant="contained" type="submit" className="button">
+            Enviar
+          </Button>
+        </form>
+      )}
+    </div>
   );
 };
 

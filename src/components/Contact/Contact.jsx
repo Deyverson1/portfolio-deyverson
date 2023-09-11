@@ -21,6 +21,7 @@ function Contact() {
 const Box = styled.section`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 5rem 2rem;
   @media screen and (max-width: 425px) {
     flex-wrap: wrap-reverse;
@@ -55,6 +56,7 @@ const H2 = styled.h2`
   }
 `;
 const P = styled.p`
+  padding-bottom: 6rem ;
   @media screen and (max-width: 425px){
     padding-bottom: .5rem;
   }
