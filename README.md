@@ -7,9 +7,9 @@ This repository contains a web application developed as a personal project. It i
 - React Router DOM
 - Mui Material Library
 It is built using:
-<> React
-<> JavaScript
-<> HTML and CSS
+## <> React
+## <> JavaScript
+## <> HTML and CSS
 ###
 ## Deyverson Herrera Valencia
 ## Actualmente desarrollada en un 80%
