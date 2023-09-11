@@ -6,10 +6,10 @@ This repository contains a web application developed as a personal project. It i
 - Styled Components
 - React Router DOM
 - Mui Material Library
-It is built using:
-## <> React
-## <> JavaScript
-## <> HTML and CSS
+## It is built using:
+ <> React
+ <> JavaScript
+ <> HTML and CSS
 ###
 ## Deyverson Herrera Valencia
 ## Actualmente desarrollada en un 80%
@@ -18,7 +18,7 @@ Este repositorio contiene una aplicacion web desarrollada como proyecto personal
 - Styled Components
 - React Router DOM
 - Mui Material Library
-Esta basada en:
+## Esta basada en:
 <>React
 <>JavaScript
 <>Html y Css
