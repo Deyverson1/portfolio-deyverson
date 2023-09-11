@@ -1,3 +1,28 @@
+## Deyverson Herrera Valencia
+
+## Currently developed at 80%
+This repository contains a web application developed as a personal project. It is based on the implementation of various concepts learned in class, such as:
+- Function Components
+- Styled Components
+- React Router DOM
+- Mui Material Library
+## It is built using:
+ <> React
+ <> JavaScript
+ <> HTML and CSS
+###
+## Deyverson Herrera Valencia
+## Actualmente desarrollada en un 80%
+Este repositorio contiene una aplicacion web desarrollada como proyecto personal. Basado en la implementacion de diferentes conceptos vistos en clase como por ejemplo:
+- Function Components
+- Styled Components
+- React Router DOM
+- Mui Material Library
+## Esta basada en:
+<>React
+<>JavaScript
+<>Html y Css
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
