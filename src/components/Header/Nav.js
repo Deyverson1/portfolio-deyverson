@@ -5,19 +5,33 @@ import styled from 'styled-components';
 const navData = [
   {
     name: 'Home',
+    href: '/',
   },
   {
     name: 'Skills',
+    href: '/Skills',
   },
   {
     name: 'Proyectos',
+    href:'/Projects',
   },
   {
-    name: 'About'
+    name: 'About Me',
+    href: 'AboutMe'
   },
   {
-    name: 'Contact'
+    name: 'CV',
+    href: 'https://drive.google.com/file/d/19DY92S-W6Yd9HlliMfrD-Q50QuhqNx27/view?usp=drive_link',
   },
+  {
+    name: 'Certificados',
+    href: 'https://drive.google.com/file/d/1Fvrayql_efe5BP4iWsJ-LHuvRpkLchnF/view',
+  },
+  {
+    name: 'Contact',
+    href: '/Contact',
+  },
+  
 ]
 export default function Navegador() {
   return (
@@ -27,13 +41,12 @@ export default function Navegador() {
           underline="hover"
           key={index}
           color="#000000"
-          href="/"
+          href={nav.href}
           fontFamily={'Poppins'}
           fontSize={'.8125rem'}
           letterSpacing={'0.0625rem'}
           textTransform={'uppercase'}
           paddingRight={'1rem'}
-          
         >
           {nav.name}
         </Linki>
@@ -43,6 +56,6 @@ export default function Navegador() {
 }
 const Linki = styled(Link)`
 &:hover{
-  color: #4169E1;
+  color: white;
 }
 `

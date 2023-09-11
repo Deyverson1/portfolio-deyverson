@@ -25,6 +25,7 @@ function Header() {
 const HeaderStyle = styled.header`
   display: flex;
   padding: 1rem 5rem;
+  background-color: #4169E1;
   @media screen and (max-width: 768px){
     padding: 1rem;
   }

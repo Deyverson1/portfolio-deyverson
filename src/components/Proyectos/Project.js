@@ -29,6 +29,13 @@ const cardData = [
     repoLink: 'https://github.com/Deyverson1/viking-task.github.io',
     visitLink: 'https://deyverson1.github.io/viking-task.github.io/',
   },
+  {
+    title: 'CRUD for Employee, User, and Job Position Management',
+    image: '/img/control.png',
+    description: 'This project involves the development of a management system that allows an organization to efficiently supervise its employees, users, and job positions. The system was created using PHP and MySQL and is focused on the fundamental operations of Create, Read, Update, and Delete (CRUD)',
+    repoLink: 'https://github.com/Deyverson1/crud-php',
+    visitLink: 'https://github.com/Deyverson1/crud-php',
+  },
 ];
 
 export default function CardMain() {

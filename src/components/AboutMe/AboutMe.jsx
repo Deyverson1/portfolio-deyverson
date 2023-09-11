@@ -25,14 +25,38 @@ function AboutMe() {
                     </Parrafo>
                     <H3>Learning</H3>
                     <Learn>
-                        <Img src="/img/java.png" alt="JavaScript" />
-                        <Img src="/img/react.png" alt="React" />
-                        <Img src="/img/html.png" alt="Html & Css" />
+                        <Aplication>
+                            <Img src="/img/java.png" alt="JavaScript" />
+                            <label htmlFor="">JavaScript</label>
+                        </Aplication>
+                        <Aplication>
+                           <Img src="/img/react.png" alt="React" />
+                           <label>React</label>
+                        </Aplication>
+                        <Aplication>
+                             <Img src="/img/html.png" alt="Html & Css" />
+                           <label>Html & Css</label>
+                        </Aplication>
+                        <Aplication>
                         <Img src="/img/node.png" alt="Node.js" />
-                        <Img src="/img/ts.png" alt="TypeScript" />
-                        <Img src="img/angular.png" alt="Angular" />
+                           <label>Node</label>
+                        </Aplication>
+                        <Aplication>
                         <Img src="/img/vue.png" alt="Vue.js" />
-                        <Img src="/img/c++.png" alt="Express.js" />
+                           <label>Vue</label>
+                        </Aplication>
+                        <Aplication>
+                        <Img src="/img/ts.png" alt="TypeScript" />
+                           <label>TypeScript</label>
+                        </Aplication>
+                        <Aplication>
+                        <Img src="/img/ph.png" alt="Php" />
+                           <label>Php</label>
+                        </Aplication>
+                        <Aplication>
+                        <Img src="/img/my.png" alt="Express.js" />
+                        <label>MySQL</label>
+                        </Aplication>
                     </Learn>
                 </Description>
             </SectionContainer>
@@ -96,6 +120,11 @@ const Learn = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+`
+const Aplication = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const Img = styled.img`
     width: 50px;

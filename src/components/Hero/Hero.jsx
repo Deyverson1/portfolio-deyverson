@@ -27,8 +27,8 @@ function Hero() {
             <div>
                 <Name>Hi, I'm <Goat>Deyverson Herrera</Goat></Name>
                 {/* Frontend Developer<Blinker>|</Blinker> */}
-                <Profession><Goat>a</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Frontend Developer',]}
-                    loop={5}
+                <Profession><Goat>a</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
+                    loop={3}
                     cursor
                     cursorStyle='|'
                     typeSpeed={70}
