@@ -11,10 +11,8 @@ It is built using:
 <> JavaScript
 <> HTML and CSS
 ###
-##Deyverson Herrera Valencia
-
-
-##Actualmente desarrollada en un 80%
+## Deyverson Herrera Valencia
+## Actualmente desarrollada en un 80%
 Este repositorio contiene una aplicacion web desarrollada como proyecto personal. Basado en la implementacion de diferentes conceptos vistos en clase como por ejemplo:
 - Function Components
 - Styled Components
