@@ -35,7 +35,7 @@ function AboutMe() {
                         </Aplication>
                         <Aplication>
                              <Img src="/img/html.png" alt="Html & Css" />
-                           <label>Html & Css</label>
+                           <label>Html&Css</label>
                         </Aplication>
                         <Aplication>
                         <Img src="/img/node.png" alt="Node.js" />

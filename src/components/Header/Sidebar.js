@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from '@mui/material';
+import Back from './Salir';
 
-const Sidebar = () => {
+const Sidebar = ({ toggleNavAndSidebar }) => {
     const navData = [
         {
           name: 'Home',
@@ -32,11 +33,19 @@ const Sidebar = () => {
           name: 'Contact',
           href: '/Contact',
         },
-        
+        {
+          name: 'Personalizacion',
+          href: '',
+        },
+        {
+          name: 'Tema',
+          href: '',
+        }, 
       ]
   return (
     <SidebarContainer>
       <SidebarContent>
+            <Back onClick={ toggleNavAndSidebar}/>
             <Div>
             <>
             {navData.map((nav, index) => (
@@ -56,12 +65,13 @@ const Sidebar = () => {
                 </Content>
             ))}
             </>
-            </Div>
             <SocialMedia className='social'>
                 <Img src="/img/insta.png" alt="instagram"/>
                 <Img src="/img/gith.png" alt="GitHub" />
                 <Img src="/img/linkk.png" alt="Linkedin" />
             </SocialMedia>
+            </Div>
+            
       </SidebarContent>
     </SidebarContainer>
   
@@ -75,8 +85,8 @@ const SidebarContainer = styled.div`
   width: 250px; 
   height: 100%; 
   background-color: #fff; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  z-index: 10000; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+  z-index: 1; 
 `;
 
 const SidebarContent = styled.div`
@@ -84,20 +94,27 @@ const SidebarContent = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
 `;
 const Div = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
+    justify-content: space-between;
+    @media screen and (max-width:425px){
+      margin-top: 1.5rem;
+    }
 `
 const Content = styled(Link)`
 
 `
 const SocialMedia = styled.div`
+    padding-top: 3rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-evenly;
+    @media screen and (max-width: 425px){
+    padding-top: .7rem;
+}
 `
 const Img = styled.img`
     width: 35px;

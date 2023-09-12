@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import Navegador from "./Nav.js";
 import styled from "styled-components";
 import Icon from "./Icon.js";
 import Sidebar from "./Sidebar.js";
+import X from "./Salir.js";
 
 function Header() {
   const [sidebar, setSidebar] = useState(false);
@@ -13,7 +14,10 @@ function Header() {
     setSidebar(!sidebar);
     setNavVisible(!navVisible); // Cambia la visibilidad del Navegador
   };
-
+  const toggleNavAndSidebar = () => {
+    setSidebar(false); // Cierra el Sidebar
+    setNavVisible(true); // Muestra el Navegador
+  };
   return (
     <HeaderStyle>
       <Nav>
@@ -28,8 +32,7 @@ function Header() {
           <Icon onClick={toggleSidebar} />
         </NavLinks>
       </Nav>
-      {sidebar && <Sidebar />}
-      
+      {sidebar && <Sidebar toggleNavAndSidebar={toggleNavAndSidebar}/>}
     </HeaderStyle>
   );
 }
