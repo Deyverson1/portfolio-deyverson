@@ -20,8 +20,8 @@ function Contact() {
 //styles
 const Box = styled.section`
   display: flex;
-  justify-content: space-around;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 5rem 2rem;
   @media screen and (max-width: 425px) {
     flex-wrap: wrap-reverse;
