@@ -121,9 +121,9 @@ const FormSignUp = () => {
             helperText={message.valid === false && 'Ingresa un contenido válido.'}
             onChange={(e) => setMessage({ value: e.target.value, valid: null })}
           />
-          <Button variant="contained" type="submit" className="button">
+          <Boton variant="contained" type="submit" className="button">
             Enviar
-          </Button>
+          </Boton>
         </form>
       )}
     </div>
@@ -131,6 +131,11 @@ const FormSignUp = () => {
 };
 
 const CampoTexto = styled(TextField)`
+  @media screen and (max-width: 425px){
+  width: 287px;
+  }
+`
+const Boton = styled(Button)`
   @media screen and (max-width: 425px){
   width: 287px;
   }
