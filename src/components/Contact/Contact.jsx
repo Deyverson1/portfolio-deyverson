@@ -22,12 +22,13 @@ const Box = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 2rem;
+  margin: 5rem 2rem;
   @media screen and (max-width: 425px) {
-    /* align-items: normal; */
     flex-wrap: wrap-reverse;
-    // padding: 3rem 2rem;
+    margin: 3rem 2rem;
+    max-width: 375px;
   }
+  
 `;
 const Aclaracion = styled.div`
   display: flex;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export default function Back({onClick}) {
     return (
-    <Button name="atras" id="atras" class="btn btn-primary" role="submit"
+    <Button name="atras" id="atras" role="submit"
                 onClick={onClick}>Back
                 
     </Button>
