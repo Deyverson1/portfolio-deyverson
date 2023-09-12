@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import './style.css'
+import styled from 'styled-components';
 
 const validateCustomName = (name) => {
     const length = name.length;
@@ -88,7 +89,7 @@ const FormSignUp = () => {
           onSubmit={handleSubmit}
           className="form"
         >
-          <TextField
+          <CampoTexto
             required
             label="Nombre"
             type="text"
@@ -98,7 +99,7 @@ const FormSignUp = () => {
             helperText={name.valid === false && 'Ingresa un nombre válido.'}
             onChange={(e) => setName({ value: e.target.value, valid: null })}
           />
-          <TextField
+          <CampoTexto
             required
             label="Email"
             type="email"
@@ -108,7 +109,7 @@ const FormSignUp = () => {
             helperText={email.valid === false && 'Ingrese un email válido.'}
             onChange={(e) => setEmail({ value: e.target.value, valid: null })}
           />
-          <TextField
+          <CampoTexto
             required
             label="Campo texto"
             className="inputo"
@@ -128,5 +129,11 @@ const FormSignUp = () => {
     </div>
   );
 };
+
+const CampoTexto = styled(TextField)`
+  @media screen and (max-width: 425px){
+  width: 287px;
+  }
+`
 
 export default FormSignUp;

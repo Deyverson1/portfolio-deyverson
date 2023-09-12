@@ -5,7 +5,7 @@ import styled from "styled-components";
 function Contact() {
   return (
     <Box>
-      <FormSignUp/>
+      <Form/>
       <Aclaracion>
         <H2>Contacto</H2>
         <P>
@@ -27,6 +27,7 @@ const Box = styled.section`
     flex-wrap: wrap-reverse;
     margin: 3rem 2rem;
     max-width: 375px;
+    box-sizing: border-box;
   }
   
 `;
@@ -49,6 +50,9 @@ const Aclaracion = styled.div`
     margin-left: 0;
   }
 `;
+const Form = styled(FormSignUp)`
+  max-width: 10px !important;
+`
 const H2 = styled.h2`
   padding-top: 6rem;
   @media screen and (max-width: 768px){
