@@ -24,6 +24,7 @@ const Box = styled.section`
   align-items: center;
   padding: 5rem 2rem;
   @media screen and (max-width: 425px) {
+    /* align-items: normal; */
     flex-wrap: wrap-reverse;
     padding: 3rem 2rem;
   }
@@ -44,6 +45,7 @@ const Aclaracion = styled.div`
   }
   @media screen and (max-width: 425px){
     margin-bottom: 2rem;
+    margin-left: 0;
   }
 `;
 const H2 = styled.h2`

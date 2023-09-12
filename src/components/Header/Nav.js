@@ -55,6 +55,7 @@ export default function Navegador() {
   );
 }
 const Linki = styled(Link)`
+
 &:hover{
   color: white;
 }

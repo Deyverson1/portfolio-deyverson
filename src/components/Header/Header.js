@@ -1,9 +1,19 @@
-import React from "react"
+import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import Navegador from "./Nav.js";
 import styled from "styled-components";
-// Funcion principal - Estilos al final
+import Icon from "./Icon.js";
+import Sidebar from "./Sidebar.js";
+
 function Header() {
+  const [sidebar, setSidebar] = useState(false);
+  const [navVisible, setNavVisible] = useState(true); // Agrega un estado para controlar la visibilidad del Navegador
+
+  const toggleSidebar = () => {
+    setSidebar(!sidebar);
+    setNavVisible(!navVisible); // Cambia la visibilidad del Navegador
+  };
+
   return (
     <HeaderStyle>
       <Nav>
@@ -13,14 +23,17 @@ function Header() {
         </LogoSpace>
         <NavLinks>
           <Div>
-            <Navegador/>
+            {navVisible && <Navegador />} {/* Muestra el Navegador si navVisible es verdadero */}
           </Div> 
-           <MenuIcon/>
+          <Icon onClick={toggleSidebar} />
         </NavLinks>
       </Nav>
+      {sidebar && <Sidebar />}
+      
     </HeaderStyle>
   );
 }
+
 // Estilos Metodologia BEM
 const HeaderStyle = styled.header`
   display: flex;
@@ -67,7 +80,7 @@ const NavLinks = styled.div`
     }
 `
 const Div = styled.div`
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 768px){
       display: none;
     }
 `

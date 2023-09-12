@@ -1,16 +1,15 @@
 import * as React from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
 
-export default function Icon() {
+export default function Icon({onClick}) {
     return (
-      <SvgIcon>
+      <SvgIcon onClick={onClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          
         >
           <path
             strokeLinecap="round"
@@ -21,4 +20,4 @@ export default function Icon() {
         </svg>
       </SvgIcon>
     );
-  }
+}
