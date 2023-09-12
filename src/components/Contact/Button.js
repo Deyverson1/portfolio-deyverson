@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import styled from 'styled-components';
 
 const Botonn = styled(Button)`
-width: 5rem;
+width: 287px;
 `
 export default function Boton() {
   return (
