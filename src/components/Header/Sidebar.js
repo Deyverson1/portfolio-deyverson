@@ -87,6 +87,10 @@ const SidebarContainer = styled.div`
   background-color: #fff; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
   z-index: 1; 
+  @media screen and (max-width:425px){
+    top: 81px;
+    height: 361px;
+  }
 `;
 
 const SidebarContent = styled.div`
