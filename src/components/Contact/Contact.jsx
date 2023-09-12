@@ -26,7 +26,7 @@ const Box = styled.section`
   @media screen and (max-width: 425px) {
     /* align-items: normal; */
     flex-wrap: wrap-reverse;
-    padding: 3rem 2rem;
+    // padding: 3rem 2rem;
   }
 `;
 const Aclaracion = styled.div`
