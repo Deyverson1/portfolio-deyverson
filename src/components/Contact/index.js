@@ -137,12 +137,12 @@ const Div = styled.div`
 `
 const CampoTexto = styled(TextField)`
   @media screen and (max-width: 425px){
-  width: 287px;
+  width: 100%;
   }
 `
 const Boton = styled(Button)`
   @media screen and (max-width: 425px){
-  width: 287px;
+  width: 100%;
   }
 `
 
