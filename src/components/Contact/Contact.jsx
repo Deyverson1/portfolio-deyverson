@@ -21,13 +21,11 @@ function Contact() {
 const Box = styled.section`
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  // align-items: center;
   margin: 5rem 2rem;
   @media screen and (max-width: 425px) {
     flex-wrap: wrap-reverse;
     margin: 3rem 2rem;
-    max-width: 375px;
-    box-sizing: border-box;
   }
   
 `;
@@ -42,7 +40,7 @@ const Aclaracion = styled.div`
   padding-top: 0;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
   @media screen and (max-width: 768px){
-    width: 70vh;
+    width: 60vh;
     margin-left: 1rem;
   }
   @media screen and (max-width: 425px){

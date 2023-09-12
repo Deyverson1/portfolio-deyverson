@@ -79,7 +79,7 @@ const FormSignUp = () => {
   };
 
   return (
-    <div>
+    <Div>
       {isSuccess ? (
         <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: '#4169e1', color: 'white', padding: '10px', borderRadius: '4px' }}>¡Formulario enviado con éxito!</div>
       ) : (
@@ -126,10 +126,15 @@ const FormSignUp = () => {
           </Boton>
         </form>
       )}
-    </div>
+    </Div>
   );
 };
-
+const Div = styled.div`
+  width: 100%; 
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+`
 const CampoTexto = styled(TextField)`
   @media screen and (max-width: 425px){
   width: 287px;
