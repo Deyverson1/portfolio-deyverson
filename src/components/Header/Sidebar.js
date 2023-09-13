@@ -66,9 +66,9 @@ const Sidebar = ({ toggleNavAndSidebar }) => {
             ))}
             </>
             <SocialMedia className='social'>
-                <Img src="/img/insta.png" alt="instagram"/>
-                <Img src="/img/gith.png" alt="GitHub" />
-                <Img src="/img/linkk.png" alt="Linkedin" />
+                <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.png" alt="Instagram" /></a>
+                <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.png" alt="GitHub" /></a>
+                <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkk.png" alt="Linkedin" /></a>
             </SocialMedia>
             </Div>
             

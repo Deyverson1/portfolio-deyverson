@@ -18,23 +18,15 @@ function App() {
     <Router>
       <General>
     <Header/>
-    {/* <Hero/>
-    <Skills/>
-    <Projects/>
-    <AboutMe/>
-    <LinearProgres/>
-    <Contact/>
-    <LinearProgres/>
-    <Footer/> */}
         <Routes>
           <Route path="/" element={ <div>
             <Hero/>
             <Skills/>
             <Projects/>
             <AboutMe/>
-            <LinearProgres/>
+            {/* <LinearProgres/> */}
             <Contact/>
-            <LinearProgres/>
+            {/* <LinearProgres/> */}
             <Footer/>
           </div>
           }/>
