@@ -6,6 +6,7 @@ export const HeroContent = styled.section`
     margin: 7rem 3rem;
     @media screen and (max-width: 425px){
         margin: 5rem 0rem;
+        margin-bottom: 0;
     }
 `
 export const Name = styled.h1`

@@ -5,7 +5,6 @@ import styled from "styled-components";
 function Contact() {
   return (
     <Box>
-      
       <Aclaracion>
         <H2>Contacto</H2>
         <P>
@@ -25,7 +24,8 @@ const Box = styled.section`
   margin: 5rem 2rem;
   @media screen and (max-width: 425px) {
     flex-wrap: wrap-reverse;
-    margin: 3rem 2rem;
+    margin-bottom: 0;
+    padding-top: 1rem;
     width: auto;
   }
 `;
@@ -45,6 +45,7 @@ const Aclaracion = styled.div`
   @media screen and (max-width: 425px){
     margin-bottom: 2rem;
     margin-left: 0;
+    padding-top: 1rem;
   }
 `;
 

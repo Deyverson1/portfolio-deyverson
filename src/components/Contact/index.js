@@ -81,7 +81,7 @@ const FormSignUp = () => {
   return (
     <Div>
       {isSuccess ? (
-        <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: '#4169e1', color: 'white', padding: '10px', borderRadius: '4px' }}>¡Formulario enviado con éxito!</div>
+        <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: '#4169e1', color: 'white', padding: '10px', borderRadius: '4px', marginBottom:'2rem' }}>¡Formulario enviado con éxito!</div>
       ) : (
         <form
           action="https://formsubmit.co/ragvalhalla78@gmail.com"

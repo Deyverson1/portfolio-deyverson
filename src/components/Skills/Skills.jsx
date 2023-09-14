@@ -35,6 +35,7 @@ const SkillSection = styled.section`
     margin: 8rem 2rem;
     @media screen and (max-width: 768px){
         margin: 0 2rem;
+        margin-top: 5rem;
     }
 `
 const Title = styled.h2`
@@ -43,6 +44,9 @@ const Title = styled.h2`
     padding-left: 12px;
     letter-spacing: 0.0625rem;
     font-weight: 500;
+    @media screen and (max-width: 425px){
+        padding-top: 1rem;
+    }
 `
 const SkillsContent = styled.section`
     display: flex;

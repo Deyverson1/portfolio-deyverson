@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
+import './style.css'
 
 const cardData = [
   {
@@ -17,14 +18,14 @@ const cardData = [
   },
   {
     title: 'Team management',
-    image: '/img/mapa-mental.png',
+    image: '/img/project.png',
     description: "Website for team organization using React and JavaScript implementation, incorporating event handling in the project's logic along with LocalStorage for an enhanced user experience, as well as ensuring responsiveness. ",
     repoLink: 'https://github.com/Deyverson1/org',
     visitLink: 'https://encriptador-github-io.vercel.app/',
   },
   {
     title: 'Viking Task',
-    image: '/img/portapapeles.png',
+    image: '/img/try.png',
     description: 'This project is a task management app I created as part of my course. It helps users efficiently manage their daily tasks using technologies like JavaScript (JS), CRUD operations, and LocalStorage for a seamless user experience.',
     repoLink: 'https://github.com/Deyverson1/viking-task.github.io',
     visitLink: 'https://deyverson1.github.io/viking-task.github.io/',
@@ -42,12 +43,13 @@ export default function CardMain() {
   return (
     <>
       {cardData.map((card, index) => (
-        <StyledCard key={index} sx={{ maxWidth: 345 }}>
+        <StyledCard key={index} sx={{ maxWidth: 345 }} className='card'>
           <CardMedia
             component="img"
             alt={`Image for ${card.title}`}
             height="140"
             image={card.image}
+            className='imgWidth'
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div" fontFamily='Poppins'>

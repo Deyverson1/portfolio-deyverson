@@ -68,13 +68,16 @@ function AboutMe() {
 const AboutMeContainer = styled.section`
     margin: 5rem 2rem;
     @media screen and (max-width: 768px){
-        margin: 0 2rem;
+        margin-bottom: 0;
         padding-bottom: 1rem;
     }
 `
 const H1 = styled.h1`
     letter-spacing: 0.0625rem;
     font-weight: 500;
+    @media screen and (max-width: 425px){
+        padding-top: 1rem;
+    }
 `
 const SectionContainer = styled.section`
     display: flex;
