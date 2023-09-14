@@ -1,33 +1,32 @@
 import React, { useState } from "react";
-// import MenuIcon from '@mui/icons-material/Menu';
 import Navegador from "./Nav.js";
 import styled from "styled-components";
 import Icon from "./Icon.js";
 import Sidebar from "./Sidebar.js";
-import X from "./Salir.js";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [sidebar, setSidebar] = useState(false);
-  const [navVisible, setNavVisible] = useState(true); // Agrega un estado para controlar la visibilidad del Navegador
+  const [navVisible, setNavVisible] = useState(true);
 
   const toggleSidebar = () => {
     setSidebar(!sidebar);
-    setNavVisible(!navVisible); // Cambia la visibilidad del Navegador
+    setNavVisible(!navVisible); 
   };
   const toggleNavAndSidebar = () => {
-    setSidebar(false); // Cierra el Sidebar
-    setNavVisible(true); // Muestra el Navegador
+    setSidebar(false);
+    setNavVisible(true); 
   };
   return (
     <HeaderStyle>
       <Nav>
         <LogoSpace>
           <Img src="/img/code1.png" alt="Logo portafolio Deyverson"/>
-          <P>Deyverson</P>
+          <Linki to="/"><P>Deyverson</P></Linki>
         </LogoSpace>
         <NavLinks>
           <Div>
-            {navVisible && <Navegador />} {/* Muestra el Navegador si navVisible es verdadero */}
+            {navVisible && <Navegador />} 
           </Div> 
           <Icon onClick={toggleSidebar} />
         </NavLinks>
@@ -46,7 +45,6 @@ const HeaderStyle = styled.header`
     padding: 1rem;
   }
   @media screen and (max-width: 425px){
-    /* padding: 1rem 2rem; */
     padding-left: 0;
     padding-right: 0;
     position: fixed;
@@ -78,6 +76,9 @@ const Img = styled.img`
   width: wrem;
   height: 2rem;
 `
+const Linki = styled(Link)`
+  text-decoration: none;
+`
 const NavLinks = styled.div`
     display: inline-flex;
     justify-content: flex-end;
@@ -100,5 +101,11 @@ const P = styled.p`
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   padding-top: 3px;
+  color: black;
+  text-decoration: none;
+  :hover{
+    color: white;
+    text-decoration: overline;
+  }
 `
 export default Header;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from '@mui/material'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 function Footer() {
@@ -18,9 +18,9 @@ function Footer() {
             </div>
                 <div className='SectionEnlaces'>
                     <h4 className='tittle'>ENLACES</h4>
-                       <Link className='enlaces' href="/" >HOME</Link> 
-                       <Link className='enlaces' href="/Projects'" >PROJECTS</Link> 
-                       <Link className='enlaces' href="/Contact" >CONTACT</Link> 
+                       <Link className='enlaces' to="/" >HOME</Link> 
+                       <Link className='enlaces' to="/Projects" >PROJECTS</Link> 
+                       <Link className='enlaces' to="/Contact" >CONTACT</Link> 
                 </div>
                 <SocialMedia>
                     <h5 className='tittle'>REDES SOCIALES</h5>

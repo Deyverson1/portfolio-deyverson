@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from '@mui/material';
 import styled from 'styled-components';
 
 export default function Back({onClick}) {
     return (
     <Button name="atras" id="atras" role="submit"
-                onClick={onClick}>Back
-                
+        onClick={onClick}>Back    
     </Button>
     );
 }
@@ -19,13 +17,7 @@ const Button = styled.a`
     padding-top: 1rem;
     text-transform: uppercase;
     text-decoration: underline;
+    &:hover{
+        color: #4169E1;
+    }
 ` 
-// underline="hover"
-// color="#000000"
-// fontFamily={'Poppins'}
-// fontSize={'13px'}
-// letterSpacing={'0.0625rem'}
-// textTransform={'uppercase'}
-// paddingTop={'1rem'}
-// cursor={'pointer'}
-

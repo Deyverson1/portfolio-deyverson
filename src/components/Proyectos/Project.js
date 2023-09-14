@@ -13,15 +13,15 @@ const cardData = [
     title: 'Encriptador de texto',
     image: '/img/archivo-encriptado.png',
     description: 'Development of a text encryptor that primarily employs JavaScript practices for the logic responsible for text processing and encryption. Additionally, it integrates event handling, responsiveness, and styles  implemented through HTML and CSS',
-    repoLink: 'https://github.com/Deyverson1/encriptador1.github.io',
-    visitLink: 'https://encriptador1-github-io.vercel.app/',
+    repoLink: 'https://github.com/Deyverson1/encrypter',
+    visitLink: 'https://encriptador-github-io.vercel.app/',
   },
   {
     title: 'Team management',
     image: '/img/project.png',
     description: "Website for team organization using React and JavaScript implementation, incorporating event handling in the project's logic along with LocalStorage for an enhanced user experience, as well as ensuring responsiveness. ",
     repoLink: 'https://github.com/Deyverson1/org',
-    visitLink: 'https://encriptador-github-io.vercel.app/',
+    visitLink: 'https://org-dusky.vercel.app/',
   },
   {
     title: 'Viking Task',

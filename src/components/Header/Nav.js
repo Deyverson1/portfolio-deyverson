@@ -1,35 +1,36 @@
 import * as React from 'react';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const navData = [
   {
     name: 'Home',
-    href: '/',
+    to: '/',
   },
   {
     name: 'Skills',
-    href: '/Skills',
+    to: '/Skills',
   },
   {
     name: 'Proyectos',
-    href:'/Projects',
+    to:'/Projects',
   },
   {
     name: 'About Me',
-    href: 'AboutMe'
+    to: 'AboutMe'
   },
   {
     name: 'CV',
-    href: 'https://drive.google.com/file/d/19DY92S-W6Yd9HlliMfrD-Q50QuhqNx27/view?usp=drive_link',
+    to: 'https://drive.google.com/file/d/19DY92S-W6Yd9HlliMfrD-Q50QuhqNx27/view?usp=drive_link',
   },
   {
     name: 'Certificados',
-    href: 'https://drive.google.com/file/d/1Fvrayql_efe5BP4iWsJ-LHuvRpkLchnF/view',
+    to: 'https://drive.google.com/file/d/1Fvrayql_efe5BP4iWsJ-LHuvRpkLchnF/view',
   },
   {
     name: 'Contact',
-    href: '/Contact',
+    to: '/Contact',
   },
   
 ]
@@ -38,15 +39,8 @@ export default function Navegador() {
     <>
       {navData.map((nav, index) => (
         <Linki
-          underline="hover"
           key={index}
-          color="#000000"
-          href={nav.href}
-          fontFamily={'Poppins'}
-          fontSize={'.8125rem'}
-          letterSpacing={'0.0625rem'}
-          textTransform={'uppercase'}
-          paddingRight={'1rem'}
+          to={nav.to}
         >
           {nav.name}
         </Linki>
@@ -55,8 +49,15 @@ export default function Navegador() {
   );
 }
 const Linki = styled(Link)`
-
+color: #000000;
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Poppins';
+font-size: .8125rem;
+padding-right: 1rem;
+letter-spacing:  0.0625rem ;
 &:hover{
   color: white;
+  text-decoration:  overline;
 }
 `
