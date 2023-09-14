@@ -46,7 +46,14 @@ const HeaderStyle = styled.header`
     padding: 1rem;
   }
   @media screen and (max-width: 425px){
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
   }
 `
 const Nav = styled.nav`
@@ -79,7 +86,7 @@ const NavLinks = styled.div`
     font-family: 'Poppins', sans-serif;
     padding-right: 1rem;
     @media screen and (max-width: 425px){
-      padding-right: 0;
+      padding-right: 1rem;
     }
 `
 const Div = styled.div`

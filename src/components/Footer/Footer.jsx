@@ -52,6 +52,9 @@ const SocialMedia = styled.div`
     justify-content: center; 
     flex-direction: column ;
     align-items: center;
+    @media screen and (max-width: 425px){
+        padding-bottom: 1rem;
+    }
 `
 const Img = styled.img`
     width: 40px;

@@ -5,7 +5,7 @@ export const HeroContent = styled.section`
     justify-content: space-evenly;
     margin: 7rem 3rem;
     @media screen and (max-width: 425px){
-        margin: 2rem 0;
+        margin: 5rem 0rem;
     }
 `
 export const Name = styled.h1`
@@ -14,7 +14,7 @@ export const Name = styled.h1`
     color: #444444;
     margin: 0;
     @media screen and (max-width: 425px){
-        padding: 0 2rem;
+        padding: 1rem 2rem;
         font-size: 35px;
     }
 `

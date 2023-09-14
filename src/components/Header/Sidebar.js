@@ -89,7 +89,7 @@ const SidebarContainer = styled.div`
   z-index: 1; 
   @media screen and (max-width:425px){
     top: 81px;
-    height: 523px;
+    height: 530px;
   }
 `;
 
