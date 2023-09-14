@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components"
+import './style.css'
 
 function AboutMe() {
     return(
@@ -22,6 +23,7 @@ function AboutMe() {
                     methodologies ranging from Soft Skills to web development methodologies like
                     Scrum. This allows me to be an adaptable individual, and my learning curve is
                     quite high, as I am always acquiring new knowledge.
+                    
                     </Parrafo>
                     <H3>Learning</H3>
                     <Learn>
