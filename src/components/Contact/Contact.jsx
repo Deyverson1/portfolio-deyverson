@@ -11,7 +11,6 @@ function Contact() {
         <P>
           ¿Deseas ponerte en contacto conmigo? <br />
           ¡Deja un mensaje y me pondre en contacto contigo! <br />
-          {/* O me puedes contactar por medio de deyverson.contacto@gmail.com */}
         </P>
         <FormSignUp/>
       </Aclaracion>
@@ -27,6 +26,7 @@ const Box = styled.section`
   @media screen and (max-width: 425px) {
     flex-wrap: wrap-reverse;
     margin: 3rem 2rem;
+    width: auto;
   }
 `;
 const Aclaracion = styled.div`
@@ -34,8 +34,6 @@ const Aclaracion = styled.div`
   flex-direction: column;
   width: 90vh;
   border-radius: 30px;
-  /* background-color: #6495ed; */
-  /* background: linear-gradient(to right, #4169e1, #6495ed); */
   text-align: center;
   margin-top: 0;
   padding-top: 0;

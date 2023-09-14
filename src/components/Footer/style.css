@@ -42,16 +42,7 @@
     letter-spacing: 0.0625rem;
     font-weight: 500;
 }
-/* underline="hover"
-key={index}
-color="#000000"
-href={nav.href}
-fontFamily={'Poppins'}
-fontSize={'.8125rem'}
-letterSpacing={'0.0625rem'}
-textTransform={'uppercase'}
-paddingRight={'1rem'}
-> */
+
 @media screen and (max-width:425px){
     .tittle{
         margin-bottom: .5rem;
