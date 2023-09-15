@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import { Poster, HeroContent, Name, Goat, Profession, Afirmacion, ImgHero, ImgPoster } from ".";
 import { Typewriter } from 'react-simple-typewriter'
 import styled from 'styled-components';
-// Effecto de la imagen + estructura 
+import { useTranslation } from 'react-i18next';
+
 function Hero() {
+    const { t } = useTranslation();
     useEffect(() => {
         const el = document.getElementById('poster');
         const height = el.clientHeight;
@@ -25,9 +27,8 @@ function Hero() {
     return (
         <HeroContent>
             <div>
-                <Name>Hi, I'm <Goat>Deyverson Herrera</Goat></Name>
-                {/* Frontend Developer<Blinker>|</Blinker> */}
-                <Profession><Goat>a</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
+                <Name>{t('Identidad')} <Goat>Deyverson Herrera</Goat></Name>
+                <Profession><Goat>{t('Conector')}</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
                     loop={3}
                     cursor
                     cursorStyle='|'
@@ -36,8 +37,8 @@ function Hero() {
                     delaySpeed={1000}
                     /> 
                 </Profession>
-                <Afirmacion>Como un tejedor de codigos en el vasto lienzo digital, encuentro inspiracion en la tecnologia para dar vida a mundos completamente nuevos. 
-                <br />¡El universo digital aguarda nuestra imaginacion sin limites!</Afirmacion>
+                <Afirmacion>{t('HeroDescription')} 
+                <br />{t('HeroSubDescription')}</Afirmacion>
                 <Media>
                 <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.png" alt="Instagram" /></a>
                 <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.png" alt="GitHub" /></a>

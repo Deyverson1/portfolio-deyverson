@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components"
 import './style.css'
+import { useTranslation } from 'react-i18next';
 
 function AboutMe() {
+    const { t } = useTranslation();
     return(
+        
         <AboutMeContainer>
             <H1>About Me</H1>
             <SectionContainer>
@@ -13,19 +16,9 @@ function AboutMe() {
                 </Profile> 
                 <Description>
                     <Parrafo>
-                    I am a 20-year-old programmer focused on UI environment and interface development,
-                    with extensive knowledge across various technologies that enable me to provide
-                    diverse approaches tailored to the project's requirements. Supported by my
-                    studies in Industrial Mechatronics, I always strive to find the most optimal way
-                    for web environment development, aiming for both efficiency and visual
-                    excellence.
-                    My studies are also geared towards teamwork, utilizing various team
-                    methodologies ranging from Soft Skills to web development methodologies like
-                    Scrum. This allows me to be an adaptable individual, and my learning curve is
-                    quite high, as I am always acquiring new knowledge.
-                    
+                    {t('AboutMeDescription')}
                     </Parrafo>
-                    <H3>Learning</H3>
+                    <H3>{t('AboutMeSubTittle')}</H3>
                     <Learn>
                         <Aplication>
                             <Img src="/img/java.png" alt="JavaScript" />

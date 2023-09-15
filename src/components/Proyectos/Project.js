@@ -6,40 +6,44 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import './style.css'
 
-const cardData = [
-  {
-    title: 'Encriptador de texto',
-    image: '/img/archivo-encriptado.png',
-    description: 'Development of a text encryptor that primarily employs JavaScript practices for the logic responsible for text processing and encryption. Additionally, it integrates event handling, responsiveness, and styles  implemented through HTML and CSS',
-    repoLink: 'https://github.com/Deyverson1/encrypter',
-    visitLink: 'https://encriptador-github-io.vercel.app/',
-  },
-  {
-    title: 'Team management',
-    image: '/img/project.png',
-    description: "Website for team organization using React and JavaScript implementation, incorporating event handling in the project's logic along with LocalStorage for an enhanced user experience, as well as ensuring responsiveness. ",
-    repoLink: 'https://github.com/Deyverson1/org',
-    visitLink: 'https://org-dusky.vercel.app/',
-  },
-  {
-    title: 'Viking Task',
-    image: '/img/try.png',
-    description: 'This project is a task management app I created as part of my course. It helps users efficiently manage their daily tasks using technologies like JavaScript (JS), CRUD operations, and LocalStorage for a seamless user experience.',
-    repoLink: 'https://github.com/Deyverson1/viking-task.github.io',
-    visitLink: 'https://deyverson1.github.io/viking-task.github.io/',
-  },
-  {
-    title: 'CRUD for Employee, User, and Job Position Management',
-    image: '/img/control.png',
-    description: 'This project involves the development of a management system that allows an organization to efficiently supervise its employees, users, and job positions. The system was created using PHP and MySQL and is focused on the fundamental operations of Create, Read, Update, and Delete (CRUD)',
-    repoLink: 'https://github.com/Deyverson1/crud-php',
-    visitLink: 'https://github.com/Deyverson1/crud-php',
-  },
-];
+
+
 
 export default function CardMain() {
+  const { t } = useTranslation();
+  const cardData = [
+    {
+      title: t('ProjectsTittle1'),
+      image: '/img/archivo-encriptado.png',
+      description: t('ProjectsDescription1'),
+      repoLink: 'https://github.com/Deyverson1/encrypter',
+      visitLink: 'https://encriptador-github-io.vercel.app/',
+    },
+    {
+      title: t('ProjectsTittle2'),
+      image: '/img/project.png',
+      description: t('ProjectsDescription2'),
+      repoLink: 'https://github.com/Deyverson1/org',
+      visitLink: 'https://org-dusky.vercel.app/',
+    },
+    {
+      title: t('ProjectsTittle3'),
+      image: '/img/try.png',
+      description: t('ProjectsDescription3'),
+      repoLink: 'https://github.com/Deyverson1/viking-task.github.io',
+      visitLink: 'https://deyverson1.github.io/viking-task.github.io/',
+    },
+    {
+      title: t('ProjectsTittle4'),
+      image: '/img/control.png',
+      description: t('ProjectsDescription4'),
+      repoLink: 'https://github.com/Deyverson1/crud-php',
+      visitLink: 'https://github.com/Deyverson1/crud-php',
+    },
+  ];
   return (
     <>
       {cardData.map((card, index) => (

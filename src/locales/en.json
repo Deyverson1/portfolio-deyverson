@@ -1,0 +1,26 @@
+{
+    "Identidad": "Hi, I'm",
+    "Conector" : "a",
+    "HeroDescription" :"As a weaver of code on the vast digital canvas, I find inspiration in technology to bring entirely new worlds to life.",
+    "HeroSubDescription": "The digital universe awaits our boundless imagination!",
+    "SkillsTittle1": "Optimization",
+    "SkillsDescription1": "To refine the efficiency and performance of web applications to provide users with a fast and seamless experience",
+    "SkillsTittle2": "Adaptability",
+    "SkillsDescription2": "Development with the ability to adapt fluidly and visually attractive to different screen sizes.",
+    "SkillsTittle3": "Maintainability",
+    "SkillsDescription3": "Code that is both interactive and easy to understand, which can be modified and maintained in the long term.",
+    "ProjectsTittle1": "Text Encryptor",
+    "ProjectsDescription1": "Development of a text encryptor that primarily employs JavaScript practices for the logic responsible for text processing and encryption. Additionally, it integrates event handling, responsiveness, and styles implemented through HTML and CSS",
+    "ProjectsTittle2": "Team management",
+    "ProjectsDescription2": "Website for team organization using React and JavaScript implementation, incorporating event handling in the project's logic along with LocalStorage for an enhanced user experience, as well as ensuring responsiveness.",
+    "ProjectsTittle3": "Viking Task",
+    "ProjectsDescription3": "This project is a task management app I created as part of my course. It helps users efficiently manage their daily tasks using technologies like JavaScript (JS), CRUD operations, and LocalStorage for a seamless user experience.",
+    "ProjectsTittle4":"CRUD for Employee, User, and Job Position Management",
+    "ProjectsDescription4": "This project involves the development of a management system that allows an organization to efficiently supervise its employees, users, and job positions. The system was created using PHP and MySQL and is focused on the fundamental operations of Create, Read, Update, and Delete (CRUD)",
+    "AboutMeDescription": "I am a 20-year-old programmer focused on UI environment and interface development, with extensive knowledge across various technologies that enable me to provide diverse approaches tailored to the project's requirements. Supported by my studies in Industrial Mechatronics, I always strive to find the most optimal way for web environment development, aiming for both efficiency and visual excellence. My studies are also geared towards teamwork, utilizing various team methodologies ranging from Soft Skills to web development methodologies like Scrum. This allows me to be an adaptable individual, and my learning curve is quite high, as I am always acquiring new knowledge.",
+    "AboutMeSubTittle": "Learning",
+    "Contact": "Contact",
+    "ContactDescripcion": "Do you want to get in touch with me?",
+    "ContactSubDescripcion": "Leave a message, and I will get in touch with you!"
+
+}

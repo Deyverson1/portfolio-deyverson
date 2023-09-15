@@ -1,0 +1,26 @@
+{
+  "Identidad": "Hi, I'm",
+  "Conector": "a",
+  "HeroDescription" :"Como un tejedor de codigos en el vasto lienzo digital, encuentro inspiracion en la tecnologia para dar vida a mundos completamente nuevos.",
+  "HeroSubDescription": "¡El universo digital aguarda nuestra imaginacion sin limites!",
+  "SkillsTittle1": "Optimizacion",
+  "SkillsDescription1": "Perfeccionar la eficiencia y el rendimiento de las aplicaciones web para brindar a los usuarios una experiencia rapida y fluida.",
+  "SkillsTittle2": "Adaptabilidad",
+  "SkillsDescription2": "Desarrollo con capacidad para adaptarse de manera fluida y visualmente atractiva a diferentes tamaños de pantallas",
+  "SkillsTittle3": "Mantenibilidad",
+  "SkillsDescription3": "Codigo tanto interactivo como de facil comprension, que puede ser modificado y mantenido a largo plazo.",
+  "ProjectsTittle1": "Encriptador de texto",
+  "ProjectsDescription1": "Desarrollo de un cifrador de texto que emplea principalmente prácticas de JavaScript para la lógica responsable del procesamiento y cifrado de texto. Además, integra el manejo de eventos, la capacidad de respuesta y los estilos implementados a través de HTML y CSS.",
+  "ProjectsTittle2": "Gestión de equipos",
+  "ProjectsDescription2": "Sitio web para la organización de equipos utilizando React e implementación en JavaScript, incorporando el manejo de eventos en la lógica del proyecto junto con LocalStorage para una experiencia de usuario mejorada, además de garantizar la capacidad de respuesta (responsiveness).",
+  "ProjectsTittle3": "Viking Task",
+  "ProjectsDescription3": "Este proyecto es una aplicación de gestión de tareas que creé como parte de mi curso. Ayuda a los usuarios a gestionar eficientemente sus tareas diarias utilizando tecnologías como JavaScript (JS), operaciones CRUD y LocalStorage para una experiencia de usuario fluida.",
+  "ProjectsTittle4": "CRUD para la gestión de empleados, usuarios y puestos laborales.",
+  "ProjectsDescription4": "Este proyecto implica el desarrollo de un sistema de gestión que permite a una organización supervisar eficientemente a sus empleados, usuarios y posiciones laborales. El sistema fue creado utilizando PHP y MySQL y se centra en las operaciones fundamentales de Crear, Leer, Actualizar y Eliminar (CRUD).",
+  "AboutMeDescription": "Soy un programador de 19 años enfocado en el entorno de interfaz de usuario y el desarrollo de interfaces, con un amplio conocimiento en diversas tecnologías que me permiten ofrecer enfoques variados adaptados a los requisitos del proyecto. Respaldado por mis estudios en Mecatrónica Industrial, siempre me esfuerzo por encontrar la forma más óptima de desarrollar entornos web, buscando tanto la eficiencia como la excelencia visual. Mis estudios también están orientados hacia el trabajo en equipo, utilizando diversas metodologías de equipo que van desde habilidades blandas hasta metodologías de desarrollo web como Scrum. Esto me permite ser una persona adaptable, y mi curva de aprendizaje es bastante alta, ya que siempre estoy adquiriendo nuevos conocimientos.",
+  "AboutMeSubTittle": "Aprendiendo",
+  "Contact": "Contacto",
+  "ContactDescripcion": "¿Deseas ponerte en contacto conmigo?",
+  "ContactSubDescripcion": "¡Deja un mensaje y me pondre en contacto contigo!"
+  }
+  

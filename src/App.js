@@ -5,10 +5,11 @@ import Hero from './components/Hero/Hero'
 import Projects from './components/Proyectos/Projets';
 import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact';
-import LinearProgres from './components/Linear/Linear';
+// import LinearProgres from './components/Linear/Linear';
 import Footer from './components/Footer/Footer';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 const General = styled.div`
   background-color: #f5f5f5;

@@ -1,15 +1,17 @@
 import React from "react";
 import FormSignUp from ".";
 import styled from "styled-components";
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+  const { t } = useTranslation();
   return (
     <Box>
       <Aclaracion>
-        <H2>Contacto</H2>
+        <H2>{t('Contact')}</H2>
         <P>
-          ¿Deseas ponerte en contacto conmigo? <br />
-          ¡Deja un mensaje y me pondre en contacto contigo! <br />
+        {t('ContactDescripcion')} <br />
+        {t('ContactSubDescripcion')} <br />
         </P>
         <FormSignUp/>
       </Aclaracion>
