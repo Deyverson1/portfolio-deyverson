@@ -14,7 +14,7 @@ const Button = styled.a`
     font-size: .8125rem;
     letter-spacing: 0.0625rem;
     width: 5rem;
-    padding-top: 1rem;
+    padding-bottom: 4rem;
     text-transform: uppercase;
     text-decoration: underline;
     &:hover{

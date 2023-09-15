@@ -2,8 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Back from './Salir';
+import { useState } from 'react';
+import Idioma from './Idioma';
 
 const Sidebar = ({ toggleNavAndSidebar }) => {
+  const [idioma, setIdioma] = useState(false);
+  const [idiomaVisible, setIdiomaVisible] = useState(true);
+
+  const toggleIdioma = () => {
+    setIdioma(!idioma);
+    setIdiomaVisible(!idiomaVisible); 
+  };
+  const toggleIdiomaVar = () => {
+    setIdioma(false);
+    setIdiomaVisible(true); 
+  };
   const navData = [
     {
       name: 'Home',
@@ -32,23 +45,15 @@ const Sidebar = ({ toggleNavAndSidebar }) => {
     {
       name: 'Contact',
       href: '/Contact',
-    },
-    {
-      name: 'Personalizar',
-      href: '',
-    },
-    {
-      name: 'Tema',
-      href: '',
-    },
+    }
   ]
   return (
     <SidebarContainer>
       <SidebarContent>
-        <Back onClick={toggleNavAndSidebar} />
-        <Div>
+        {idiomaVisible && <Div>
+          <Back onClick={toggleNavAndSidebar} />
           <>
-            {navData.map((nav, index) => (
+               {navData.map((nav, index) => (
               <Content
                 key={index}
                 to={nav.href}
@@ -57,14 +62,28 @@ const Sidebar = ({ toggleNavAndSidebar }) => {
                 {nav.name}
               </Content>
             ))}
+              <Content   
+              >
+                Tema
+              </Content>
+              <Content
+                onClick={toggleIdioma}
+              >
+                Idioma
+              </Content>
           </>
-          <SocialMedia className='social'>
+          
+          
+        </Div>
+        }
+        <div>
+        {idioma && <Idioma toggleIdiomaVar={toggleIdiomaVar}/>}
+        </div>
+      <SocialMedia className='social'>
             <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.png" alt="Instagram"/></a>
             <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.png" alt="GitHub"/></a>
             <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkk.png" alt="Linkedin"/></a>
-          </SocialMedia>
-        </Div>
-
+      </SocialMedia>
       </SidebarContent>
     </SidebarContainer>
 
@@ -91,12 +110,14 @@ const SidebarContent = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
+  justify-content: space-around;
 `;
 const Div = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
-    justify-content: space-between;
+    justify-content: space-around;
+   margin-top: 1rem;
     @media screen and (max-width:425px){
       margin-top: 1.5rem;
     }
