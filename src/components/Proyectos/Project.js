@@ -83,9 +83,8 @@ const StyledCard = styled(Card)`
   margin: 2rem;
 `
 const Boton = styled(Link)`
-  color: white;
   text-decoration: none;
-  background-color: ${(props) => props.color || '#4169E1'};
+  color: ${(props) => props.color || '#4169E1'};
   padding: .5rem;
   border-radius: 3px;
   width: 105px;
@@ -93,7 +92,7 @@ const Boton = styled(Link)`
   text-transform: uppercase;
   font-size: 14px;
   line-height: 25px;
-  &:hover{
+  /* &:hover{
     box-shadow: 0px 0px 5px rgba(0,0,0,1);
-  }
+  } */
 `
