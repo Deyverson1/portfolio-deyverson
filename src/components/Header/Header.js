@@ -5,6 +5,7 @@ import Icon from "./Icon.js";
 import Sidebar from "./Sidebar.js";
 import { Link } from "react-router-dom";
 import { useColor } from './ColorContext';
+import CodeIcon from '@mui/icons-material/Code';
 
 function Header() {
   const { color } = useColor();
@@ -23,7 +24,7 @@ function Header() {
     <HeaderStyle color={color}>
       <Nav>
         <LogoSpace>
-          <Img src="/img/code1.png" alt="Logo portafolio Deyverson"/>
+          <CodeIcon/>
           <Linki to="/"><P>Deyverson</P></Linki>
         </LogoSpace>
         <NavLinks>
@@ -73,10 +74,6 @@ const LogoSpace = styled.div`
     @media screen and (max-width: 768px){
       padding-left: 1rem;
     }
-`
-const Img = styled.img`
-  width: wrem;
-  height: 2rem;
 `
 const Linki = styled(Link)`
   text-decoration: none;

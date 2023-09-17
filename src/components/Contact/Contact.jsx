@@ -54,6 +54,7 @@ const Aclaracion = styled.div`
 const H2 = styled.h2`
   padding-top: 3rem;
   margin-bottom: 1px;
+  text-transform: uppercase;
   @media screen and (max-width: 768px){
     padding-top: 4rem
   }

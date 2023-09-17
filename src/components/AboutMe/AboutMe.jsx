@@ -10,7 +10,7 @@ function AboutMe() {
     return(
         
         <AboutMeContainer>
-            <H1>About Me</H1>
+            <H1>{t('Aboot')}</H1>
             <SectionContainer>
                <Profile color={color}>
                     <h1>Deyverson Herrera Valencia</h1>
@@ -72,6 +72,7 @@ const AboutMeContainer = styled.section`
 const H1 = styled.h1`
     letter-spacing: 0.0625rem;
     font-weight: 500;
+    text-transform: uppercase;
     @media screen and (max-width: 425px){
         padding-top: 1rem;
     }

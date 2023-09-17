@@ -7,7 +7,6 @@ import { useColor } from '../Header/ColorContext';
 
 function Hero() {
     const { color } = useColor();
-
     const { t } = useTranslation();
     useEffect(() => {
         const el = document.getElementById('poster');

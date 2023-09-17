@@ -66,10 +66,10 @@ const Sidebar = ({ toggleNavAndSidebar }) => {
   ]
   return (
     <SidebarContainer>
-      <Back onClick={toggleNavAndSidebar} />
+    
       <SidebarContent>
         {idiomaVisible && temaVisible && <Div>
-          
+          <Back onClick={toggleNavAndSidebar} />
           <>
                {navData.map((nav, index) => (
               <Content

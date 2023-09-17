@@ -12,7 +12,7 @@ function Skills() {
   const { t } = useTranslation();
   return (
     <SkillSection>
-      <Title>Skills</Title>
+      <Title>{t("Skills")}</Title>
       <SkillsContent>
         <Card color={color}>
           <LanguageIcon
@@ -62,6 +62,7 @@ const Title = styled.h2`
   padding-left: 12px;
   letter-spacing: 0.0625rem;
   font-weight: 500;
+  text-transform: uppercase;
   @media screen and (max-width: 425px) {
     padding-top: 1rem;
   }

@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components";
 import CardMain from "./Project";
+import { useTranslation } from "react-i18next";
+
 
 function Projects(){
+    const { t } = useTranslation();
     return(
         <Content>
-            <H1>Projects</H1>
+            <H1>{t("Projects")}</H1>
             <DivContent>
                 <CardMain/>
                 
@@ -27,6 +30,7 @@ const H1 = styled.h2`
     padding-left: 12px;
     letter-spacing: 0.0625rem;
     font-weight: 500;
+    text-transform: uppercase;
     @media screen and (max-width: 425px){
         padding-top: 1rem;
     }
