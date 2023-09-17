@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import './style.css'
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+    const { t } = useTranslation();
     return(
         <Content>
            
@@ -17,13 +19,13 @@ function Footer() {
                 </div>
             </div>
                 <div className='SectionEnlaces'>
-                    <h4 className='tittle'>ENLACES</h4>
-                       <Link className='enlaces' to="/" >HOME</Link> 
-                       <Link className='enlaces' to="/Projects" >PROJECTS</Link> 
-                       <Link className='enlaces' to="/Contact" >CONTACT</Link> 
+                    <h4 className='tittle'>{ t('Link')}</h4>
+                       <Link className='enlaces' to="/" >{ t('Home')}</Link> 
+                       <Link className='enlaces' to="/Projects" >{ t('Projects')}</Link> 
+                       <Link className='enlaces' to="/Contact" >{ t('ContactNav')}</Link> 
                 </div>
                 <SocialMedia>
-                    <h5 className='tittle'>REDES SOCIALES</h5>
+                    <h5 className='tittle'>{t('SocialMedia')}</h5>
                     <div>
                         <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/instagram-.png" alt="Instagram" /></a>
                         <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/github-.png" alt="GitHub" /></a>
@@ -42,6 +44,7 @@ const Content = styled.section`
     background-color: black;
     color: white;
     height: 400px;
+    text-transform: uppercase;
     @media screen and (max-width: 425px){
         flex-direction: column;
         height: auto;

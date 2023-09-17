@@ -3,8 +3,10 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import './style.css'
 import styled from 'styled-components';
-
+import { useColor } from '../Header/ColorContext';
+import { Link } from 'react-router-dom';
 const validateCustomName = (name) => {
+  
     const length = name.length;
     if (length > 3) {
         return true;
@@ -30,6 +32,8 @@ const validateCustomMessage = (message) => {
 };
 
 const FormSignUp = () => {
+  const { color } = useColor();
+
   const [name, setName] = useState({ value: '', valid: null });
   const [email, setEmail] = useState({ value: '', valid: null });
   const [message, setMessage] = useState({ value: '', valid: null });
@@ -81,13 +85,16 @@ const FormSignUp = () => {
   return (
     <Div>
       {isSuccess ? (
-        <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: '#4169e1', color: 'white', padding: '10px', borderRadius: '4px', marginBottom:'2rem' }}>¡Formulario enviado con éxito!</div>
+        <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: color,color: 'white', padding: '10px', borderRadius: '4px', marginBottom:'2rem' }}>¡Formulario enviado con éxito!</div>
       ) : (
         <form
           action="https://formsubmit.co/ragvalhalla78@gmail.com"
           method="POST"
           onSubmit={handleSubmit}
           className="form"
+          alignItems='center'
+          width= '90%'
+
         >
           <CampoTexto
             required
@@ -121,9 +128,9 @@ const FormSignUp = () => {
             helperText={message.valid === false && 'Ingresa un contenido válido.'}
             onChange={(e) => setMessage({ value: e.target.value, valid: null })}
           />
-          <Boton variant="contained" type="submit" className="button">
+          <Btn color={color} type="submit" className="button">
             Enviar
-          </Boton>
+          </Btn>
         </form>
       )}
     </Div>
@@ -136,13 +143,24 @@ const Div = styled.div`
   justify-content: center;
 `
 const CampoTexto = styled(TextField)`
+  width: 90%;
   @media screen and (max-width: 425px){
   width: 100%;
   }
 `
-const Boton = styled(Button)`
-  @media screen and (max-width: 425px){
-  width: 100%;
+const Btn = styled(Link)`
+  color: white;
+  text-decoration: none;
+  background-color: ${(props) => props.color || '#4169E1'};
+  padding: .5rem;
+  border-radius: 3px;
+  width: 105px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 25px;
+  &:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
   }
 `
 

@@ -3,8 +3,11 @@ import { Poster, HeroContent, Name, Goat, Profession, Afirmacion, ImgHero, ImgPo
 import { Typewriter } from 'react-simple-typewriter'
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import { useColor } from '../Header/ColorContext';
 
 function Hero() {
+    const { color } = useColor();
+
     const { t } = useTranslation();
     useEffect(() => {
         const el = document.getElementById('poster');
@@ -27,8 +30,8 @@ function Hero() {
     return (
         <HeroContent>
             <div>
-                <Name>{t('Identidad')} <Goat>Deyverson Herrera</Goat></Name>
-                <Profession><Goat>{t('Conector')}</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
+                <Name>{t('Identidad')} <Goat  style={{ color: color }}>Deyverson Herrera</Goat></Name>
+                <Profession><Goat style={{ color: color }}>{t('Conector')}</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
                     loop={3}
                     cursor
                     cursorStyle='|'

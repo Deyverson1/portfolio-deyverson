@@ -49,7 +49,8 @@ export const Afirmacion = styled.h3`
 `
 
 export const ImgPoster = styled.div`
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     @media screen and (max-width: 768px){
         display: none;

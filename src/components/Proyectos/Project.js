@@ -8,11 +8,13 @@ import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import './style.css'
-
+import { useColor } from '../Header/ColorContext';
+import { Link } from 'react-router-dom';
 
 
 
 export default function CardMain() {
+  const { color } = useColor();
   const { t } = useTranslation();
   const cardData = [
     {
@@ -64,12 +66,12 @@ export default function CardMain() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" href={card.repoLink} target="_blank">
+            <Boton color={color}  to={card.repoLink} target="_blank">
               Repositorio
-            </Button>
-            <Button size="small" href={card.visitLink} target="_blank">
+            </Boton>
+            <Boton color={color} to={card.visitLink} target="_blank">
               Visitar
-            </Button>
+            </Boton>
           </CardActions>
         </StyledCard>
       ))}
@@ -79,4 +81,19 @@ export default function CardMain() {
 
 const StyledCard = styled(Card)`
   margin: 2rem;
+`
+const Boton = styled(Link)`
+  color: white;
+  text-decoration: none;
+  background-color: ${(props) => props.color || '#4169E1'};
+  padding: .5rem;
+  border-radius: 3px;
+  width: 105px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 25px;
+  &:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+  }
 `

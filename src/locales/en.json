@@ -21,6 +21,17 @@
     "AboutMeSubTittle": "Learning",
     "Contact": "Contact",
     "ContactDescripcion": "Do you want to get in touch with me?",
-    "ContactSubDescripcion": "Leave a message, and I will get in touch with you!"
-
+    "ContactSubDescripcion": "Leave a message, and I will get in touch with you!",
+    "Link": "Links",
+    "Back": "Back",
+    "Home": "Home",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Aboot": "About Me",
+    "Certificate": "Certificate",
+    "ContactNav": "Contact",
+    "Theme": "Theme",
+    "Language": "Language",
+    "SocialMedia": "Social Media"
+    
 }

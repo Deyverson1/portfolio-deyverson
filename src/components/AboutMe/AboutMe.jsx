@@ -2,15 +2,17 @@ import React from "react";
 import styled from "styled-components"
 import './style.css'
 import { useTranslation } from 'react-i18next';
+import { useColor } from '../Header/ColorContext';
 
 function AboutMe() {
+    const { color } = useColor();
     const { t } = useTranslation();
     return(
         
         <AboutMeContainer>
             <H1>About Me</H1>
             <SectionContainer>
-               <Profile>
+               <Profile color={color}>
                     <h1>Deyverson Herrera Valencia</h1>
                     <Logo src="/img/Logo.png" alt="Foto Deyverson"></Logo>
                 </Profile> 
@@ -81,7 +83,7 @@ const SectionContainer = styled.section`
     }
 `
 const Profile = styled.div`
-    border: 1px solid #4169E1;
+    border: 1px solid  ${(props) => props.color || '#4169E1'};
     border-radius: 3rem;
     text-align: center;
 `

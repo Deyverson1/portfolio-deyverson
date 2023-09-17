@@ -4,11 +4,13 @@ import styled from "styled-components";
 import Icon from "./Icon.js";
 import Sidebar from "./Sidebar.js";
 import { Link } from "react-router-dom";
+import { useColor } from './ColorContext';
 
 function Header() {
+  const { color } = useColor();
   const [sidebar, setSidebar] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
-
+ 
   const toggleSidebar = () => {
     setSidebar(!sidebar);
     setNavVisible(!navVisible); 
@@ -18,7 +20,7 @@ function Header() {
     setNavVisible(true); 
   };
   return (
-    <HeaderStyle>
+    <HeaderStyle color={color}>
       <Nav>
         <LogoSpace>
           <Img src="/img/code1.png" alt="Logo portafolio Deyverson"/>
@@ -40,7 +42,7 @@ function Header() {
 const HeaderStyle = styled.header`
   display: flex;
   padding: 1rem 5rem;
-  background-color: #4169E1;
+  background-color: ${(props) => props.color || '#4169E1'};
   @media screen and (max-width: 768px){
     padding: 1rem;
   }

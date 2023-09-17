@@ -5,34 +5,39 @@ import CodeIcon from "@mui/icons-material/Code";
 import LanguageIcon from "@mui/icons-material/Language";
 import { blue } from "@mui/material/colors";
 import { useTranslation } from "react-i18next";
+import { useColor } from '../Header/ColorContext';
 
 function Skills() {
+  const { color } = useColor();
   const { t } = useTranslation();
   return (
     <SkillSection>
       <Title>Skills</Title>
       <SkillsContent>
-        <Card>
+        <Card color={color}>
           <LanguageIcon
             fontSize="large"
+            style={{ color: color }}
             sx={{ color: blue[500] }}
             className="icon"
           />
           <H3> {t("SkillsTittle1")}</H3>
           <P> {t("SkillsDescription1")}</P>
         </Card>
-        <Card>
+        <Card  color={color}>
           <WebIcon
             fontSize="large"
+            style={{ color: color }}
             sx={{ color: blue[500] }}
             className="icon"
           />
           <H3> {t("SkillsTittle2")}</H3>
           <P> {t("SkillsDescription2")}</P>
         </Card>
-        <Card>
+        <Card  color={color}>
           <CodeIcon
             fontSize="large"
+            style={{ color: color }}
             sx={{ color: blue[500] }}
             className="icon"
           />
@@ -79,16 +84,17 @@ const Card = styled.div`
   height: 300px;
   text-align: start;
   margin: 12px;
-  border: 1px solid #4169e1;
+  border: 1px solid ${(props) => props.color || '#4169E1'};
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
     transition: 0.7s;
-    background-color: #4169e1;
+    /* background-color: #4169e1; */
+    background-color: ${(props) => props.color || '#4169E1'};
     color: white;
     cursor: pointer;
     > .icon {
-      color: white;
+      color: white !important;
     }
   }
 `;
