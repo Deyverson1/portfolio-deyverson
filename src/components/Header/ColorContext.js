@@ -1,9 +1,6 @@
-// ColorContext.js
-
 import { createContext, useContext, useState } from 'react';
 
 const ColorContext = createContext();
-
 export function useColor() {
   return useContext(ColorContext);
 }
