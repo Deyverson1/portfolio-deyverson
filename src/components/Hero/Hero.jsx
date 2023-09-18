@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
-import { Poster, HeroContent, Name, Goat, Profession, Afirmacion, ImgHero, ImgPoster } from ".";
 import { Typewriter } from 'react-simple-typewriter'
-import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { useColor } from '../Header/ColorContext';
-
+import './hero.css'
 function Hero() {
     const { color } = useColor();
     const { t } = useTranslation();
@@ -27,42 +25,33 @@ function Hero() {
     }, []);
 
     return (
-        <HeroContent>
+        <section className='hero'>
             <div>
-                <Name>{t('Identidad')} <Goat  style={{ color: color }}>Deyverson Herrera</Goat></Name>
-                <Profession><Goat style={{ color: color }}>{t('Conector')}</Goat> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
-                    loop={3}
+                <header>
+                    <h1 className='name'>{t('Identidad')} <span className='span'  style={{ color: color }}>Deyverson Herrera</span></h1>
+                </header>
+                <h2 className='profesion'><span className='span' style={{ color: color }}>{t('Conector')}</span> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
+                    loop={2}
                     cursor
                     cursorStyle='|'
                     typeSpeed={70}
                     deleteSpeed={50}
                     delaySpeed={1000}
                     /> 
-                </Profession>
-                <Afirmacion>{t('HeroDescription')} 
-                <br />{t('HeroSubDescription')}</Afirmacion>
-                <Media>
-                <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.png" alt="Instagram" /></a>
-                <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.png" alt="GitHub" /></a>
-                <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkk.png" alt="Linkedin" /></a>
-                </Media>
+                </h2>
+                <h3 className='afirmacion'>{t('HeroDescription')} 
+                <br />{t('HeroSubDescription')}</h3>
+                <div className='socialMediaa'> 
+                    <a href="https://www.instagram.com/its_deyverson/" target='blank'><img className="img" src="/img/insta.webp" alt="Instagram" /></a>
+                    <a href="https://github.com/Deyverson1" target='blank'><img className="img" src="/img/gith.webp" alt="GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/deyverson/" target='blank'><img className="img" src="/img/linkk.webp" alt="Linkedin" /></a>
+                </div>
             </div>
-            <ImgPoster>
-                <Poster id="poster"> <ImgHero src="/img/code.jpg" alt="Imagen Code" /> </Poster>
-            </ImgPoster>
-            
-        </HeroContent>
+            <div className='imgContainer'>
+                <section className='poster' id="poster"> <img className='imgHero' src="/img/code.webp" alt="Imagen Code" /> </section>
+            </div>
+        </section>
     );
 }
-const Media = styled.div`
-    display: flex;
-    justify-content: center;   
-`
-const Img = styled.img`
-    width: 40px;
-    height: 40px;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    padding-top: 1rem;
-`
+
 export default Hero;

@@ -91,7 +91,6 @@ const FormSignUp = () => {
           method="POST"
           onSubmit={handleSubmit}
           className="form"
-          alignItems='center'
           width= '90%'
 
         >

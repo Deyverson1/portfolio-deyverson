@@ -6,11 +6,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import './style.css'
 import { useColor } from '../Header/ColorContext';
 import { Link } from 'react-router-dom';
-
-
+import './project.css'
 
 export default function CardMain() {
   const { color } = useColor();
@@ -18,28 +16,28 @@ export default function CardMain() {
   const cardData = [
     {
       title: t('ProjectsTittle1'),
-      image: '/img/archivo-encriptado.png',
+      image: '/img/archivo-encriptado.webp',
       description: t('ProjectsDescription1'),
       repoLink: 'https://github.com/Deyverson1/encrypter',
       visitLink: 'https://encriptador-github-io.vercel.app/',
     },
     {
       title: t('ProjectsTittle2'),
-      image: '/img/project.png',
+      image: '/img/project.webp',
       description: t('ProjectsDescription2'),
       repoLink: 'https://github.com/Deyverson1/org',
       visitLink: 'https://org-dusky.vercel.app/',
     },
     {
       title: t('ProjectsTittle3'),
-      image: '/img/try.png',
+      image: '/img/try.webp',
       description: t('ProjectsDescription3'),
       repoLink: 'https://github.com/Deyverson1/viking-task.github.io',
       visitLink: 'https://deyverson1.github.io/viking-task.github.io/',
     },
     {
       title: t('ProjectsTittle4'),
-      image: '/img/control.png',
+      image: '/img/control.webp',
       description: t('ProjectsDescription4'),
       repoLink: 'https://github.com/Deyverson1/crud-php',
       visitLink: 'https://github.com/Deyverson1/crud-php',
@@ -77,7 +75,6 @@ export default function CardMain() {
     </>
   );
 }
-
 const StyledCard = styled(Card)`
   margin: 2rem;
 `
@@ -91,7 +88,4 @@ const Boton = styled(Link)`
   text-transform: uppercase;
   font-size: 14px;
   line-height: 25px;
-  /* &:hover{
-    box-shadow: 0px 0px 5px rgba(0,0,0,1);
-  } */
 `

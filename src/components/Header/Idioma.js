@@ -13,14 +13,17 @@ const Idioma = ({toggleIdiomaVar}) => {
             <Back onClick={toggleIdiomaVar}/>
             <Tittle>Selecciona un lenguaje: </Tittle>
            <Div>
-                <Links onClick={() => {changeLanguage('en'); toggleIdiomaVar();}}><Img src="/img/english.png" alt="English Language"/>  English </Links>
-                <Links onClick={() => {changeLanguage('es'); toggleIdiomaVar();}}> <Img src="/img/espana.png" alt="English Language"/> Spanish </Links>
+                <Links onClick={() => {changeLanguage('en'); toggleIdiomaVar();}}><Img src="/img/english.webp" alt="English Language"/> <P>English</P>  </Links>
+                <Links onClick={() => {changeLanguage('es'); toggleIdiomaVar();}}> <Img src="/img/espana.webp" alt="English Language"/><P>Spanish</P> </Links>
             </Div> 
             
         </Content>
         
         )
 }
+const P = styled.p`
+    padding-left: 0.3rem;
+`
 
 const Content = styled.section`
     text-align: center;

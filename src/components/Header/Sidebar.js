@@ -98,9 +98,9 @@ const Sidebar = ({ toggleNavAndSidebar }) => {
         {tema && <Tema toggleTemaVar={toggleTemaVar}/>}
         </div>
       <SocialMedia className='social'>
-            <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.png" alt="Instagram"/></a>
-            <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.png" alt="GitHub"/></a>
-            <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkk.png" alt="Linkedin"/></a>
+            <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/insta.webp" alt="Instagram"/></a>
+            <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/gith.webp" alt="GitHub"/></a>
+            <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkk.webp" alt="Linkedin"/></a>
       </SocialMedia>
       </SidebarContent>
     </SidebarContainer>

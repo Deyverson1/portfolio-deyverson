@@ -23,36 +23,36 @@ function AboutMe() {
                     <H3>{t('AboutMeSubTittle')}</H3>
                     <Learn>
                         <Aplication>
-                            <Img src="/img/java.png" alt="JavaScript" />
-                            <label htmlFor="">JavaScript</label>
+                            <Img src="/img/java.webp" alt="JavaScript" />
+                            <label htmlFor="">JAVASCRIPT</label>
                         </Aplication>
                         <Aplication>
-                           <Img src="/img/react.png" alt="React" />
-                           <label>React</label>
+                           <Img src="/img/react.webp" alt="React" />
+                           <label>REACT</label>
                         </Aplication>
                         <Aplication>
-                             <Img src="/img/html.png" alt="Html & Css" />
-                           <label>Html&Css</label>
+                             <Img src="/img/html.webp" alt="Html & Css" />
+                           <label>HTML&CSS</label>
                         </Aplication>
                         <Aplication>
-                        <Img src="/img/node.png" alt="Node.js" />
-                           <label>Node</label>
+                        <Img src="/img/node.webp" alt="Node.js" />
+                           <label>NODE</label>
                         </Aplication>
                         <Aplication>
-                        <Img src="/img/vue.png" alt="Vue.js" />
-                           <label>Vue</label>
+                        <Img src="/img/vue.webp" alt="Vue.js" />
+                           <label>VUE</label>
                         </Aplication>
                         <Aplication>
-                        <Img src="/img/ts.png" alt="TypeScript" />
-                           <label>TypeScript</label>
+                        <Img src="/img/ts.webp" alt="TypeScript" />
+                           <label>TYPESCRIPT</label>
                         </Aplication>
                         <Aplication>
-                        <Img src="/img/ph.png" alt="Php" />
-                           <label>Php</label>
+                        <Img src="/img/php.webp" alt="Php" />
+                           <label>PHP</label>
                         </Aplication>
                         <Aplication>
-                        <Img src="/img/my.png" alt="Express.js" />
-                        <label>MySQL</label>
+                        <Img src="/img/my.webp" alt="Express.js" />
+                        <label>MYSQL</label>
                         </Aplication>
                     </Learn>
                 </Description>

@@ -1,72 +1,54 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import './style.css'
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "./footer.css";
 
 function Footer() {
-    const { t } = useTranslation();
-    return(
-        <Content>
-           
-            <div className='cabecera'>
-                 <div>
-                    <img className='imagen_silueta' src="/img/silueta-.png" alt="imagen silueta"/>
-                </div>
-                <div className='correo'>
-                    <img src="/img/correo.png" alt="imagen de correo" className='imagen' />
-                    <p className='mail'>deyversongp@gmail.com</p>
-                </div>
-            </div>
-                <div className='SectionEnlaces'>
-                    <h4 className='tittle'>{ t('Link')}</h4>
-                       <Link className='enlaces' to="/" >{ t('Home')}</Link> 
-                       <Link className='enlaces' to="/Projects" >{ t('Projects')}</Link> 
-                       <Link className='enlaces' to="/Contact" >{ t('ContactNav')}</Link> 
-                </div>
-                <SocialMedia>
-                    <h5 className='tittle'>{t('SocialMedia')}</h5>
-                    <div>
-                        <a href="https://www.instagram.com/its_deyverson/" target='blank'><Img src="/img/instagram-.png" alt="Instagram" /></a>
-                        <a href="https://github.com/Deyverson1" target='blank'><Img src="/img/github-.png" alt="GitHub" /></a>
-                        <a href="https://www.linkedin.com/in/deyverson/" target='blank'><Img src="/img/linkedin-.png" alt="Linkedin" /></a>
-                    </div>
-                </SocialMedia>
-        </Content>
-    )
-
+  const { t } = useTranslation();
+  return (
+    <section className="content">
+      <header className="cabecera">
+        <img
+          className="imagenSilueta"
+          src="/img/silueta.webp"
+          alt="imagen silueta"
+        />
+        <div className="correo">
+          <img
+            src="/img/correo.webp"
+            alt="imagen de correo"
+            className="imagen"
+          />
+          <p className="mail">deyversongp@gmail.com</p>
+        </div>
+      </header>
+      <nav className="sectionEnlaces">
+        <h4 className="tittle">{t("Link")}</h4>
+        <Link className="enlaces" to="/">
+          {t("Home")}
+        </Link>
+        <Link className="enlaces" to="/Projects">
+          {t("Projects")}
+        </Link>
+        <Link className="enlaces" to="/Contact">
+          {t("ContactNav")}
+        </Link>
+      </nav>
+      <section className="socialMedia">
+        <h5 className="tittle">{t("SocialMedia")}</h5>
+        <div>
+          <a href="https://www.instagram.com/its_deyverson/" target="blank">
+            <img className="imgContent" src="/img/instagram.webp" alt="Instagram" />
+          </a>
+          <a href="https://github.com/Deyverson1" target="blank">
+            <img className="imgContent" src="/img/github.webp" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/deyverson/" target="blank">
+            <img className="imgContent" src="/img/linkedin.webp" alt="Linkedin" />
+          </a>
+        </div>
+      </section>
+    </section>
+  );
 }
-const Content = styled.section`
-    align-items: center;
-    justify-content: space-evenly;
-    display: flex;
-    /* padding: 4rem 0; */
-    background-color: black;
-    color: white;
-    height: 400px;
-    text-transform: uppercase;
-    @media screen and (max-width: 425px){
-        flex-direction: column;
-        height: auto;
-    }
-`
-const SocialMedia = styled.div`
-    display: flex;
-    justify-content: center; 
-    flex-direction: column ;
-    align-items: center;
-    @media screen and (max-width: 425px){
-        padding-bottom: 1rem;
-    }
-`
-const Img = styled.img`
-    width: 40px;
-    height: 40px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    @media screen and (max-width: 425px){
-        width: 40px;
-        height: 40px;
-    }
-`
 export default Footer;
