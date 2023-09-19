@@ -59,6 +59,7 @@ font-family: 'Poppins';
 font-size: .8125rem;
 padding-right: 1rem;
 letter-spacing:  0.0625rem ;
+flex-wrap: wrap;
 &:hover{
   color: white;
   text-decoration:  overline;

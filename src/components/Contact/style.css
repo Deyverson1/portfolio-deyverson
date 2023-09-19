@@ -1,15 +1,67 @@
-.form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 80vh;
-    padding-bottom: 2rem;
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 2rem;
 }
-.inputo{
-    margin-bottom: 1rem !important;
+.aclaracion {
+  display: flex;
+  flex-direction: column;
+  width: 90vh;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vh;
+  padding-bottom: 2rem;
+}
+.inputo {
+  margin-bottom: 1rem !important;
+}
+.tittleContact {
+  padding-top: 3rem;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+font-weight: 500;
+}
+.contactoInfo {
+  padding-bottom: 2rem;
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .aclaracion {
+    width: 60vh;
+    margin-left: 1rem;
+  }
+  .tittleContact {
+    padding-top: 4rem;
+  }
 }
 @media screen and (max-width: 425px) {
-    .form{
-        width: auto;
-    }
+  .form {
+    width: auto;
+  }
+  .box {
+    flex-wrap: wrap-reverse;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    width: auto;
+  }
+  .aclaracion {
+    margin-bottom: 2rem;
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+  .tittleContact {
+    padding-top: 0.5rem;
+  }
+  .contactoInfo {
+    padding-bottom: 0.5rem;
+  }
 }

@@ -8,7 +8,6 @@ function AboutMe() {
     const { color } = useColor();
     const { t } = useTranslation();
     return(
-        
         <AboutMeContainer>
             <H1>{t('Aboot')}</H1>
             <SectionContainer>
@@ -84,7 +83,7 @@ const SectionContainer = styled.section`
     }
 `
 const Profile = styled.div`
-    border: 1px solid  ${(props) => props.color || '#4169E1'};
+    border: 1px solid  ${(props) => props.color || '#4a98bf'};
     border-radius: 3rem;
     text-align: center;
 `
@@ -119,20 +118,23 @@ const H3 = styled.h3`
 `
 const Learn = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 `
 const Aplication = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: .5rem;
 `
 const Img = styled.img`
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: auto;
+    max-width: 50px;
     @media screen and (max-width: 425px){
-        width: 42px;
-        height: 42px;
+        width: auto;
+        height: auto;
+        max-width: 42px;
         padding: 1rem;
     }
     @media screen and (max-width: 375px){

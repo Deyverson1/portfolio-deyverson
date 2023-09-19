@@ -43,7 +43,7 @@ function Header() {
 const HeaderStyle = styled.header`
   display: flex;
   padding: 1rem 5rem;
-  background-color: ${(props) => props.color || '#4169E1'};
+  background-color: ${(props) => props.color || '#4a98bf'};
   @media screen and (max-width: 768px){
     padding: 1rem;
   }
@@ -71,6 +71,7 @@ const LogoSpace = styled.div`
     display: flex;
     box-sizing: border-box;
     align-items: center;
+
     @media screen and (max-width: 768px){
       padding-left: 1rem;
     }
@@ -90,6 +91,7 @@ const NavLinks = styled.div`
     }
 `
 const Div = styled.div`
+    flex-wrap: wrap;
     @media screen and (max-width: 768px){
       display: none;
     }
