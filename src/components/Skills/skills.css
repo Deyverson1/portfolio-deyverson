@@ -1,13 +1,23 @@
 .skills{
     margin: 8rem 2rem;
 }
+.headerSkills{
+    padding-bottom: 2rem;
+}
 .title{
     margin: 0;
     padding: 0;
+    font-size: 22px;
     padding-left: 12px;
     letter-spacing: 0.0625rem;
     font-weight: 500;
     text-transform: uppercase;
+}
+.hr{
+    border-style:double;
+color: #303030;
+margin-bottom: 2rem;
+margin-top: 0;
 }
 .skillContent{
     display: flex;

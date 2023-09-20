@@ -13,15 +13,16 @@ function Skills() {
   const { t } = useTranslation();
   return (
     <section className="skills">
-      <header>
+      <header className="headerSkills">
         <h2 className="title">{t("Skills")}</h2>
+        <hr className="hr"/>
       </header>
       <section className="skillContent">
         <Card className="skillCard" color={color}>
           <LanguageIcon
             fontSize="large"
-            style={{ color: color }}
-            sx={{ color: blue[500] }}
+            style={{ color: color || '#4a98bf' }}
+       
             className="icon"
           />
           <h3 className="titleSkill"> {t("SkillsTittle1")}</h3>
@@ -30,8 +31,8 @@ function Skills() {
         <Card className="skillCard"  color={color}>
           <WebIcon
             fontSize="large"
-            style={{ color: color }}
-            sx={{ color: blue[500] }}
+            style={{ color: color || '#4a98bf' }}
+         
             className="icon"
           />
           <h3 className="titleSkill"> {t("SkillsTittle2")}</h3>
@@ -40,8 +41,8 @@ function Skills() {
         <Card className="skillCard" color={color}>
           <CodeIcon
             fontSize="large"
-            style={{ color: color }}
-            sx={{ color: blue[500] }}
+            style={{ color: color || '#4a98bf' }}
+          
             className="icon"
           />
           <h3 className="titleSkill"> {t("SkillsTittle3")} </h3>
@@ -52,9 +53,9 @@ function Skills() {
   );
 }
 const Card = styled.div`
-  border: 1px solid ${(props) => props.color || '#4169E1'};
+  border: 1px solid ${(props) => props.color || '#4a98bf'};
   &:hover {
-    background-color: ${(props) => props.color || '#4169E1'};
+    background-color: ${(props) => props.color || '#4a98bf'};
     > .icon {
       color: white !important;
     }

@@ -52,7 +52,7 @@ const FormSignUp = () => {
 
     if (isNameValid && isEmailValid && isMessageValid) {
       try {
-        const response = await fetch('https://formsubmit.co/ragvalhalla78@gmail.com', {
+        const response = await fetch('https://formsubmit.co/deyversongp@gmail.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const FormSignUp = () => {
         <div className="success-message" style={{ display: 'flex',  justifyContent:'center', alignItems:'center', backgroundColor: color,color: 'white', padding: '10px', borderRadius: '4px', marginBottom:'2rem' }}>¡Formulario enviado con éxito!</div>
       ) : (
         <form
-          action="https://formsubmit.co/ragvalhalla78@gmail.com"
+          action="https://formsubmit.co/deyversongp@gmail.com"
           method="POST"
           onSubmit={handleSubmit}
           className="form"
@@ -149,7 +149,7 @@ const CampoTexto = styled(TextField)`
 const Btn = styled(Link)`
   color: white;
   text-decoration: none;
-  background-color: ${(props) => props.color || '#4169E1'};
+  background-color: ${(props) => props.color || '#4a98bf'};
   padding: .5rem;
   border-radius: 3px;
   width: 105px;

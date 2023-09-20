@@ -98,7 +98,7 @@ const Div = styled.div`
 `
 const P = styled.p`
   padding-left: 1rem;
-  font-size: .8125rem;
+  font-size: .8925rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   padding-top: 3px;

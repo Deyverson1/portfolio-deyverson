@@ -33,6 +33,8 @@ font-weight: 500;
 .contactoInfo {
   padding-bottom: 2rem;
   margin-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media screen and (max-width: 768px) {
   .aclaracion {

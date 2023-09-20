@@ -80,7 +80,7 @@ const StyledCard = styled(Card)`
 `
 const Boton = styled(Link)`
   text-decoration: none;
-  color: ${(props) => props.color || '#4169E1'};
+  color: ${(props) => props.color || '#4a98bf'};
   padding: .5rem;
   border-radius: 3px;
   width: 105px;
