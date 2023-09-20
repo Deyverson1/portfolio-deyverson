@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     margin: 7rem 3rem;
 }
-.name{
+.nameHero{
     font-size: 55px;
     font-weight: 700;
     color: #444444;
@@ -38,7 +38,7 @@
 }
 .imgContainer{
     /* display: flex; */
-    display: none; 
+    /* display: none;  */
     align-items: center;
 }
 .imgHero{
@@ -73,7 +73,7 @@
     margin: 5rem 0rem;
     margin-bottom: 0;
     }
-    .name{
+    .nameHero{
         padding: 1rem 2rem;
         font-size: 35px;
         padding-top: 4rem;

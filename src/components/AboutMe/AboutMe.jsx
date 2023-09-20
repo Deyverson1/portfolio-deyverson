@@ -105,6 +105,8 @@ function AboutMe() {
 //styles
 const AboutMeContainer = styled.section`
     margin: 5rem 2rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
     @media screen and (max-width: 768px){
         margin-bottom: 0;
         padding-bottom: 1rem;
