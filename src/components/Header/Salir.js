@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import './header.css'
 
 export default function Back({onClick}) {
     const { t } = useTranslation();
     return (
-    <Button name="atras" id="atras" role="submit"
+    <Button className='b' name="atras" id="atras" role="submit"
         onClick={onClick}>{t('Back')}   
     </Button>
     );

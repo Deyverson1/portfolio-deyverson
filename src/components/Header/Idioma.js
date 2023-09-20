@@ -3,37 +3,23 @@ import i18next from "i18next";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Back from "./Salir";
+import './header.css'
 
 const Idioma = ({toggleIdiomaVar}) => {
     const changeLanguage = (language) => {
         i18next.changeLanguage(language)
     }
     return (
-        <Content>
+        <section className="idiomaContent">
             <Back onClick={toggleIdiomaVar}/>
-            <Tittle>Selecciona un lenguaje: </Tittle>
-           <Div>
-                <Links onClick={() => {changeLanguage('en'); toggleIdiomaVar();}}><Img src="/img/english.webp" alt="English Language"/> <P>English</P>  </Links>
-                <Links onClick={() => {changeLanguage('es'); toggleIdiomaVar();}}> <Img src="/img/espana.webp" alt="English Language"/><P>Spanish</P> </Links>
-            </Div> 
-            
-        </Content>
-        
+            <h2 className="tittleIdioma">Selecciona un lenguaje: </h2>
+           <div className="idiomaDiv">
+                <Links onClick={() => {changeLanguage('en'); toggleIdiomaVar();}}><img className="imgIdioma" src="/img/english.webp" alt="English Language"/> <p className="tittleLanguage">English</p>  </Links>
+                <Links onClick={() => {changeLanguage('es'); toggleIdiomaVar();}}> <img  className="imgIdioma" src="/img/espana.webp" alt="English Language"/><p className="tittleLanguage">Spanish</p> </Links>
+            </div> 
+        </section>
         )
 }
-const P = styled.p`
-    padding-left: 0.3rem;
-`
-
-const Content = styled.section`
-    text-align: center;
-`
-const Tittle = styled.h2`
-    padding-top: 5rem;
-`
-const Img = styled.img`
-    width: 30px;
-`
 const Links = styled(Link)`
     color: #000000;
     text-decoration: none;
@@ -44,10 +30,5 @@ const Links = styled(Link)`
     &:hover{
         text-decoration: overline;
     }
-`
-const Div = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 `
 export default Idioma;

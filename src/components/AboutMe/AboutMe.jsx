@@ -110,44 +110,12 @@ const AboutMeContainer = styled.section`
         padding-bottom: 1rem;
     }
 `
-const H1 = styled.h1`
-    letter-spacing: 0.0625rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    font-size: 22px;
-    @media screen and (max-width: 425px){
-        padding-top: 1rem;
-    }
-`
+
 const SectionContainer = styled.section`
     display: flex;
     flex-direction : column ;
     @media screen and (max-width: 768px){
         flex-direction: column;
-    }
-`
-const Profile = styled.div`
-    text-align: center;
-`
-
-const Description = styled.div`
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media screen and (max-width: 425px){
-        padding: 1rem;
-    }
-`
-const Parrafo = styled.p`
-    font-size: 18px;
-    font-weight: 400;
-    color: #444444;
-    width: 100%;
-    @media screen and (max-width: 425px){
-        font-size: 16px;
-        margin: 0;
     }
 `
 const H3 = styled.h3`

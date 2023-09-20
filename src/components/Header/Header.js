@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar.js";
 import { Link } from "react-router-dom";
 import { useColor } from './ColorContext';
 import CodeIcon from '@mui/icons-material/Code';
+import './header.css'
 
 function Header() {
   const { color } = useColor();
@@ -21,19 +22,19 @@ function Header() {
     setNavVisible(true); 
   };
   return (
-    <HeaderStyle color={color}>
-      <Nav>
-        <LogoSpace>
+    <HeaderStyle color={color} className="headerStyle">
+      <nav className="headerNav">
+        <div className="headerLogoSpace">
           <CodeIcon/>
-          <Linki to="/"><P>Deyverson</P></Linki>
-        </LogoSpace>
-        <NavLinks>
-          <Div>
+          <Linki to="/"><p className="nameHeader">Deyverson</p></Linki>
+        </div>
+        <main className="headerLinks">
+          <div className="navegador">
             {navVisible && <Navegador />} 
-          </Div> 
+          </div> 
           <Icon onClick={toggleSidebar} />
-        </NavLinks>
-      </Nav>
+        </main>
+      </nav>
       {sidebar && <Sidebar toggleNavAndSidebar={toggleNavAndSidebar}/>}
     </HeaderStyle>
   );
@@ -41,72 +42,10 @@ function Header() {
 
 // Estilos Metodologia BEM
 const HeaderStyle = styled.header`
-  display: flex;
-  padding: 1rem 5rem;
   background-color: ${(props) => props.color || '#4a98bf'};
-  @media screen and (max-width: 768px){
-    padding: 1rem;
-  }
-  @media screen and (max-width: 425px){
-    padding-left: 0;
-    padding-right: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    z-index: 1000;
-  }
-`
-const Nav = styled.nav`
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  @media screen and (max-width: 425px){
-    display: flex;
-    align-items: center;
-  }
-`
-const LogoSpace = styled.div`
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-
-    @media screen and (max-width: 768px){
-      padding-left: 1rem;
-    }
 `
 const Linki = styled(Link)`
   text-decoration: none;
 `
-const NavLinks = styled.div`
-    display: inline-flex;
-    justify-content: flex-end;
-    width: 100%;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    padding-right: 1rem;
-    @media screen and (max-width: 425px){
-      padding-right: 1rem;
-    }
-`
-const Div = styled.div`
-    flex-wrap: wrap;
-    @media screen and (max-width: 768px){
-      display: none;
-    }
-`
-const P = styled.p`
-  padding-left: 1rem;
-  font-size: .8925rem;
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-  padding-top: 3px;
-  color: black;
-  text-decoration: none;
-  :hover{
-    color: white;
-    text-decoration: overline;
-  }
-`
+
 export default Header;

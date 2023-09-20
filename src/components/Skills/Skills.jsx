@@ -3,7 +3,6 @@ import styled from "styled-components";
 import WebIcon from "@mui/icons-material/Web";
 import CodeIcon from "@mui/icons-material/Code";
 import LanguageIcon from "@mui/icons-material/Language";
-import { blue } from "@mui/material/colors";
 import { useTranslation } from "react-i18next";
 import { useColor } from '../Header/ColorContext';
 import './skills.css'
