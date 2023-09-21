@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components"
 import './style.css'
 import { useTranslation } from 'react-i18next';
-// import { useColor } from '../Header/ColorContext';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
@@ -10,13 +9,12 @@ function AboutMe() {
     // const { color } = useColor();
     const { t } = useTranslation();
     const customStyles = {
-        fontSize: '16px', // Cambia el tamaño de la fuente
-        width: '100%',     // Cambia el ancho del contenedor
-        margin: '0', // Centra el contenedor horizontalmente
+        fontSize: '16px',
+        width: '100%',     
+        margin: '0', 
         padding: '0',
         height: 'auto',
         textAlign: 'left',
-        // justifyContent: 'start',
       }
     return(
         <AboutMeContainer>
@@ -101,7 +99,6 @@ function AboutMe() {
         </AboutMeContainer>
     )
 }
-
 //styles
 const AboutMeContainer = styled.section`
     margin: 5rem 2rem;
@@ -112,7 +109,6 @@ const AboutMeContainer = styled.section`
         padding-bottom: 1rem;
     }
 `
-
 const SectionContainer = styled.section`
     display: flex;
     flex-direction : column ;
@@ -134,7 +130,6 @@ const Img = styled.img`
         width: auto;
         height: auto;
         max-width: 50px;
-
         padding: 1rem;
     }
     /* @media screen and (max-width: 375px){
