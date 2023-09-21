@@ -6,7 +6,6 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function AboutMe() {
-    // const { color } = useColor();
     const { t } = useTranslation();
     const customStyles = {
         fontSize: '16px',
@@ -52,7 +51,7 @@ function AboutMe() {
                     <div className="descriptionMobile">
                         <h3>Deyverson Herrera Valencia</h3>
                         <p>Mi enfoque principal se encuentra en la creacion de experiencias de usuario atractivas y eficientes.
-    <br />
+                            <br />
                             Mi objetivo es ampliar mi conjunto de habilidades para barcar el desarrollo backend y poder crear 
                             poyectos web completos.
                             <br />
