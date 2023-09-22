@@ -66,6 +66,16 @@
   .socialMedia {
     padding-bottom: 1rem;
   }
+  .sectionEnlaces{
+    align-items: center;
+  }
+  .tittle{
+    padding: .8rem;
+    text-decoration: underline;
+  }
+  .enlaces{
+    padding: .5rem;
+  }
   .tittle {
     margin-bottom: 0.5rem;
   }

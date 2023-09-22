@@ -127,7 +127,7 @@ const H3 = styled.h3`
   text-transform: uppercase;
 `;
 const Img = styled.img`
-  width: auto;
+  width: 50px;
   max-width: 50px;
   min-height: 50px;
   @media screen and (max-width: 425px) {
