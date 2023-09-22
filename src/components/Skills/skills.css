@@ -1,5 +1,5 @@
 .skills{
-    margin: 8rem 2rem;
+    margin: 5rem 2rem;
     margin-bottom: 0rem;
     padding-bottom: 2rem;
 }
@@ -64,6 +64,10 @@ margin-top: 0;
     }
 }
 @media screen and (max-width: 425px){
+    .skills{
+        margin: 5rem 2rem;
+        padding-top: 2rem;
+    }
     .title{
         padding-top: 1rem;
     }

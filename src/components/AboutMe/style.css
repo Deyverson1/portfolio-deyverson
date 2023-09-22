@@ -1,3 +1,8 @@
+/* .aboutMeContainer{
+    margin: 5rem 2rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+} */
 .learnSection{
     display: flex;
     justify-content: space-evenly;
@@ -11,7 +16,6 @@
     font-weight: 500;
     text-transform: uppercase;
     font-size: 22px;
-
 }
 .label{
     font-size: 15px;
@@ -53,3 +57,11 @@ animation: grow 6s linear infinite;
         font-size: 15px !important;
     }
 }
+/* @media screen and (max-width: 768px){
+    .aboutMeContainer{
+        margin-bottom: 0;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        background-color: red;
+    }
+} */

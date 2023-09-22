@@ -1,5 +1,7 @@
 .Content{
-    padding: 3rem 2rem;
+    margin: 3rem 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
 }
 .headerProject{
     padding-bottom: 2rem;
@@ -29,6 +31,11 @@
 }
 @media screen and (max-width: 768px){
     .Content{
+        margin: 5rem 2rem;
+        padding-bottom: 0;
+        
+    }
+    .headerProject{
         padding-bottom: 0;
     }
 }

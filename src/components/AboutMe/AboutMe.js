@@ -112,7 +112,8 @@ const AboutMeContainer = styled.section`
   @media screen and (max-width: 768px) {
     margin-bottom: 0;
     padding-bottom: 1rem;
-  }
+    padding-top: 2rem;  
+    }
 `;
 const SectionContainer = styled.section`
   display: flex;
