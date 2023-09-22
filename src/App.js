@@ -10,11 +10,8 @@ import styled from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ColorProvider } from './components/Header/ColorContext';
 
-const General = styled.div`
-  background-color: #f5f5f5;
-`;
 
-function App() {
+function App() { 
   return (
     <Router>
       <ColorProvider>
@@ -40,5 +37,7 @@ function App() {
     </Router>
   );
 }
-
+const General = styled.div`
+  background-color: #f5f5f5;
+`;
 export default App;
