@@ -26,7 +26,7 @@ export default function Navegador() {
     },
     {
       name: 'CV',
-      to: 'https://drive.google.com/file/d/19DY92S-W6Yd9HlliMfrD-Q50QuhqNx27/view?usp=drive_link',
+      to: 'https://drive.google.com/file/d/1kg3s7_OgRVShL78T0rkCRl_Zh-M0cV_6/view?usp=sharing',
     },
     {
       name:  t('Certificate'),
