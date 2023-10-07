@@ -30,7 +30,7 @@ function AboutMe() {
           customStyle={customStyles}
         >
           {`
-                    const Deyverson = {
+                    let Deyverson = {
                         me: {
                           name: 'Deyverson Herrera Valencia',
                           country: 'Colombia',
@@ -45,10 +45,10 @@ function AboutMe() {
                           Me emociona el proceso de aprendizaje constante y estoy ansioso por contribuir 
                           al mundo digital con soluciones creativas y funcionales.',
                         },
-                        learning: ['JavaScript', 'Php', 'MySQL', 'Html&Css', 'React', 'Node'],
+                        learning: ['JavaScript', 'Php', 'MySQL', 'SQL', 'Html&Css', 'React', 'Node'],
+                        soon: ['Python', 'Oracle Cloud']
                       };
                     `}
-          d
         </SyntaxHighlighter>
         <div className="descriptionMobile">
           <h3>Deyverson Herrera Valencia</h3>
