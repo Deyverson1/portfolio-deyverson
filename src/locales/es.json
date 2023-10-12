@@ -32,6 +32,12 @@
   "ContactNav": "Contacto",
   "Theme": "Tema",
   "Language": "Idioma",
-  "SocialMedia": "Redes Sociales"
+  "SocialMedia": "Redes Sociales",
+  "button": "Enviar",
+  "name": "Nombre",
+  "email": "Coreo Electronico",
+  "CampoTexto": "Campo Texto",
+  "repository": "Repositorio",
+  "Visit": "Visitar"
   }
   

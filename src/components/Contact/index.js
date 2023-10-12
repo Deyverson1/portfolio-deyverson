@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField';
 import './style.css';
 import styled from 'styled-components';
 import { useColor } from '../Header/ColorContext';
+import { useTranslation } from 'react-i18next';
 
 const validateCustomName = (name) => {
   const length = name.length;
@@ -20,6 +21,7 @@ const validateCustomMessage = (message) => {
 
 const FormSignUp = () => {
   const { color } = useColor();
+  const { t } = useTranslation();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -89,7 +91,7 @@ const FormSignUp = () => {
         >
           <CampoTexto
             required
-            label="Nombre"
+            label={t('name')}
             type="text"
             className="inputo"
             value={name}
@@ -99,7 +101,7 @@ const FormSignUp = () => {
           />
           <CampoTexto
             required
-            label="Email"
+            label={t('email')}
             type="email"
             className="inputo"
             value={email}
@@ -109,7 +111,7 @@ const FormSignUp = () => {
           />
           <CampoTexto
             required
-            label="Campo texto"
+            label={t('CampoTexto')}
             className="inputo"
             multiline
             rows={8}
@@ -124,7 +126,7 @@ const FormSignUp = () => {
             style={{ backgroundColor: color || '#4a98bf' }}
             className="btn"
           >
-            Enviar
+            {t('button')}
           </button>
         </form>
       )}

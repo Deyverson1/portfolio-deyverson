@@ -64,10 +64,10 @@ export default function CardMain() {
           </CardContent>
           <CardActions>
             <Boton color={color}  to={card.repoLink} target="_blank">
-              Repositorio
+              { t('repository')}
             </Boton>
             <Boton color={color} to={card.visitLink} target="_blank">
-              Visitar
+              { t('Visit')}
             </Boton>
           </CardActions>
         </StyledCard>
