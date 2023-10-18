@@ -42,6 +42,13 @@ export default function CardMain() {
       repoLink: 'https://github.com/Deyverson1/crud-php',
       visitLink: 'https://github.com/Deyverson1/crud-php',
     },
+    {
+      title: 'Dropi Replic',
+      image: '/img/dropi.jpg',
+      description: 'Este proyecto tiene como objetivo replicar la página web existente en https://dropi.co utilizando tecnologías avanzadas como ReactJS. La meta principal es transformar la página en una Aplicación de Página Única (SPA) para mejorar la experiencia del usuario y mantener la fidelidad visual y funcional lo más cercana posible a la original.',
+      repoLink: 'https://github.com/Deyverson1/dropi-replic',
+      visitLink: 'https://dropi-replic.vercel.app/'
+    }
   ];
   return (
     <>
