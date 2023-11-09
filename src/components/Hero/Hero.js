@@ -31,7 +31,7 @@ function Hero() {
                     <h1 className='nameHero'>{t('Identidad')} <span className='span'  style={{ color: color }}>Deyverson Herrera</span></h1>
                 </header>
                 <h2 className='profesion'><span className='span' style={{ color: color }}>{t('Conector')}</span> <Typewriter words={['Profesional Coder', 'Mechatronics Student', 'Future FullStack', 'Frontend Developer',]}
-                    loop={2}
+                    loop={3}
                     cursor
                     cursorStyle='|'
                     typeSpeed={70}
