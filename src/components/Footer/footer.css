@@ -30,6 +30,7 @@
   font-weight: 500;
   text-transform: uppercase;
   padding-left: .5rem;
+  padding-top: .13rem;
 }
 .sectionEnlaces {
   flex-direction: column;

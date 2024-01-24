@@ -40,7 +40,7 @@ const FormSignUp = () => {
 
     if (isNameValid && isEmailValid && isMessageValid) {
       try {
-        const response = await fetch('https://formsubmit.co/ragvalhalla78@gmail.com', {
+        const response = await fetch('https://formsubmit.co/deyversongp@gmail.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,6 @@ const FormSignUp = () => {
             message: message,
           }),
         });
-
         if (response.ok) {
           console.log('Datos enviados correctamente');
           setName('');

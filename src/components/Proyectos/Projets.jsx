@@ -13,9 +13,8 @@ function Projects(){
             </header>
             <main className="divContent">
                 <CardMain/>
-                
             </main>
         </section>
     )
-} 
+}
 export default Projects

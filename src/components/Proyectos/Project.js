@@ -44,7 +44,7 @@ export default function CardMain() {
     },
     {
       title: 'Dropi Replic',
-      image: '/img/dropi.jpg',
+      image: 'https://dropi.co/wp-content/uploads/2023/05/favicon-300x300.png',
       description: t('ProjectsDescription5'),
       repoLink: 'https://github.com/Deyverson1/dropi-replic',
       visitLink: 'https://dropi-replic.vercel.app/'
