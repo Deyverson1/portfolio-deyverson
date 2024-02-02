@@ -1,13 +1,8 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { useColor } from '../Header/ColorContext';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './project.css'
 
 export default function CardMain() {
@@ -48,51 +43,57 @@ export default function CardMain() {
       description: t('ProjectsDescription5'),
       repoLink: 'https://github.com/Deyverson1/dropi-replic',
       visitLink: 'https://dropi-replic.vercel.app/'
+    },{
+      title: 'Dropi Replic',
+      image: 'https://dropi.co/wp-content/uploads/2023/05/favicon-300x300.png',
+      description: t('ProjectsDescription5'),
+      repoLink: 'https://github.com/Deyverson1/dropi-replic',
+      visitLink: 'https://dropi-replic.vercel.app/'
     }
   ];
   return (
     <>
       {cardData.map((card, index) => (
-        <StyledCard key={index} sx={{ maxWidth: 345 }} className='card'>
-          <CardMedia
-            component="img"
-            alt={`Image for ${card.title}`}
-            height="140"
-            image={card.image}
-            className='imgWidth'
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div" fontFamily='Poppins'>
-              {card.title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" fontFamily='Poppins'>
-              {card.description}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Boton color={color}  to={card.repoLink} target="_blank">
-              { t('repository')}
-            </Boton>
-            <Boton color={color} to={card.visitLink} target="_blank">
-              { t('Visit')}
-            </Boton>
-          </CardActions>
-        </StyledCard>
+        <section className='sectionCard'>
+          <Article color={color} id={index}>
+            <picture className='pictureCard'>
+              <img src={card.image} alt={card.title} className='imgCard' />
+            </picture>
+            <div className='divCard'>
+              <h4 className='titleCard'>{card.title}</h4>
+              <p className='descriptionCard'>{card.description}</p>
+              <div className='buttonsCard'>
+                <Button color={color} target='blank' href={card.repoLink}>Respositorio</Button>
+                <Button color={color} target='blank' href={card.visitLink}>Visitar</Button>
+              </div>
+            </div>
+          </Article>
+        </section>
       ))}
     </>
   );
 }
-const StyledCard = styled(Card)`
-  margin: 2rem;
+
+const Article = styled.article`
+  border-radius: 1rem;
+  border: 1px solid #4a5568; /* gray-700 */
+  box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: white; /* gray-800 */
+  border-color: ${(props) => props.color || '#4a98bf'};
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  &:hover{
+    transform: scale(1.05);
+    background-color: white};
+    border-color: #white;
+  }
 `
-const Boton = styled(Link)`
+
+const Button = styled.a`
   text-decoration: none;
   color: ${(props) => props.color || '#4a98bf'};
-  padding: .5rem;
-  border-radius: 3px;
-  width: 105px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 25px;
+
 `

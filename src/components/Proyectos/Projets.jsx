@@ -1,6 +1,7 @@
 import React from "react"
 import CardMain from "./Project";
 import { useTranslation } from "react-i18next";
+// import styled from 'styled-components';
 import './project.css'
 
 function Projects(){
@@ -18,3 +19,4 @@ function Projects(){
     )
 }
 export default Projects
+

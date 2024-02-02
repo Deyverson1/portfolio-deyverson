@@ -45,8 +45,8 @@ function AboutMe() {
                           Me emociona el proceso de aprendizaje constante y estoy ansioso por contribuir 
                           al mundo digital con soluciones creativas y funcionales.',
                         },
-                        learning: ['JavaScript', 'Php', 'MySQL', 'SQL', 'Html&Css', 'React', 'Node'],
-                        soon: ['Python', 'Oracle Cloud']
+                        learning:  ['JavaScript', 'React', 'Astro', 'Svelte', 'Tailwind', 'MySQL', 'Php', 'Node'],
+                        soon: ['Python']
                       };
                     `}
         </SyntaxHighlighter>
