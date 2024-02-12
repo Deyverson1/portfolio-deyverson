@@ -14,7 +14,6 @@ function Skills() {
     <section className="skills">
       <header className="headerSkills">
         <h2 className="title">{t("Skills")}</h2>
-        <hr className="hr"/>
       </header>
       <section className="skillContent">
         <Card className="skillCard" color={color}>

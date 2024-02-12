@@ -2,6 +2,8 @@
 .headerStyle{
     display: flex;
     padding: 1rem 5rem;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 .headerNav{
     width: 100%;
@@ -74,7 +76,6 @@
     .headerStyle{
         padding-left: 0;
         padding-right: 0;
-        position: fixed;
         top: 0;
         left: 0;
         width: 100%; 

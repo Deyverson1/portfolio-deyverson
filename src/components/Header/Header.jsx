@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Icon from "./Icon.js";
 import Sidebar from "./Sidebar.js";
 import { Link } from "react-router-dom";
-import { useColor } from './ColorContext';
+import { useColor } from './ColorContext.js';
 import CodeIcon from '@mui/icons-material/Code';
 import './header.css'
 

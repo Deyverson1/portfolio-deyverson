@@ -54,7 +54,7 @@ export default function CardMain() {
   return (
     <>
       {cardData.map((card, index) => (
-        <section className='sectionCard'>
+        <section key={index} className='sectionCard'>
           <Article color={color} id={index}>
             <picture className='pictureCard'>
               <img src={card.image} alt={card.title} className='imgCard' />

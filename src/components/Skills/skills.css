@@ -2,6 +2,8 @@
     margin: 5rem 2rem;
     margin-bottom: 0rem;
     padding-bottom: 2rem;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .headerSkills{
     padding-bottom: 2rem;
@@ -13,7 +15,6 @@
     padding-left: 12px;
     letter-spacing: 0.0625rem;
     font-weight: 500;
-    text-transform: uppercase;
 }
 .hr{
     border-style:double;
@@ -55,6 +56,9 @@ margin-top: 0;
     margin-top: 0.5rem;
 }
 @media screen and (max-width: 768px){
+    .skills{
+        padding: 0;
+    }
     .skillSection{
         margin: 0 2rem;
         margin-top: 5rem;

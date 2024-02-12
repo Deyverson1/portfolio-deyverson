@@ -10,7 +10,6 @@ function Projects(){
         <section className="Content">
             <header className="headerProject">
             <h1 className="tittleProject">{t("Projects")}</h1>
-            <hr className="hr"/>
             </header>
             <main className="divContent">
                 <CardMain/>

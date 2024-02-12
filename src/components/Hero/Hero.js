@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 import { useTranslation } from 'react-i18next';
 import { useColor } from '../Header/ColorContext';
@@ -6,24 +5,6 @@ import './hero.css'
 function Hero() {
     const { color } = useColor();
     const { t } = useTranslation();
-    useEffect(() => {
-        const el = document.getElementById('poster');
-        const height = el.clientHeight;
-        const width = el.clientWidth;
-
-        el.addEventListener('mousemove', (e) => {
-            const { layerX, layerY } = e;
-            const yRotation = ((layerX - width / 2) / width) * 6;
-            const xRotation = ((layerY - height / 2) / height) * 6;
-            const string = `perspective(400px) scale(1) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
-            el.style.transform = string;
-        });
-
-        el.addEventListener('mouseout', () => {
-            el.style.transform = `perspective(500px) scale(1) rotateX(0) rotateY(0)`;
-        });
-    }, []);
-
     return (
         <section className='hero'>
             <div>
@@ -47,9 +28,7 @@ function Hero() {
                     <a href="https://www.linkedin.com/in/deyverson/" target='blank'><img className="img" src="/img/linkk.webp" alt="Linkedin" /></a>
                 </div>
             </div>
-            <div className='imgContainer'>
-                <section className='poster' id="poster"> <img className='imgHero' src="/img/code.webp" alt="Imagen Code" /> </section>
-            </div>
+            
         </section>
     );
 }

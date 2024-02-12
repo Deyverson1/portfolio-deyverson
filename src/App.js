@@ -24,7 +24,6 @@ function App() {
               <Projects />
               <AboutMe />
               <Contact />
-              <Footer />
             </div>} />
             <Route path='/Hero' element={<Hero />} />
             <Route path='/Skills' element={<Skills />} />
@@ -32,6 +31,7 @@ function App() {
             <Route path='/AboutMe' element={<AboutMe />} />
             <Route path='/Contact' element={<Contact />} />
           </Routes>
+              <Footer />
         </General>
       </ColorProvider>
     </Router>
