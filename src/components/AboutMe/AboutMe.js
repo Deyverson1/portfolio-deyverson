@@ -50,15 +50,14 @@ function AboutMe() {
                           name: 'Deyverson Herrera Valencia',
                           country: 'Colombia',
                           age: 20,
-                          aboutMe: 'Mi enfoque principal se encuentra en la creacion de experiencias de usuario atractivas
+                          aboutMe: 'Mi enfoque principal se encuentra en la creación de experiencias de usuario atractivas
                           y eficientes.
 
-                          Mi objetivo es ampliar mi conjunto de habilidades para barcar el desarrollo backend y poder crear 
-                          poyectos web completos.
+                          Como programador me he dedicado a adquirir diversos conocimientos que me ayuden en el enfoque de 
+                          diferentes proyectos, desde ReactJs hasta MySQL.
                           
-                          Siempre estoy en búsqueda de nuevos desafíos y oportunidades para crecer como desarrollador. 
-                          Me emociona el proceso de aprendizaje constante y estoy ansioso por contribuir 
-                          al mundo digital con soluciones creativas y funcionales.',
+                          En mi aprendizaje he desarrollado diferentes proyectos que me han ayudado a mejorar mis habilidades, 
+                          desde replicas de paginas web como Dropi.co, Bancolombia, hasta aplicaciones de lógica y encriptamiento.',
                         },
                         learning:  ['JavaScript', 'React', 'Astro', 'Svelte', 'Tailwind', 'MySQL', 'Php', 'Node'],
                         soon: ['Python']

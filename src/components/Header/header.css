@@ -1,7 +1,7 @@
 /* header */
 .headerStyle{
     display: flex;
-    padding: 1rem 5rem;
+    padding: 1.2rem 5rem;
     padding-left: 140px;
     padding-right: 140px;
 }
@@ -18,7 +18,7 @@
 }
 .headerLinks{
     display: inline-flex;
-    justify-content: flex-end;
+
     width: 100%;
     align-items: center;
     font-family: 'Poppins', sans-serif;

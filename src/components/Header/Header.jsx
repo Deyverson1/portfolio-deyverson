@@ -22,13 +22,9 @@ function Header() {
     setNavVisible(true); 
   };
   return (
-    <HeaderStyle color={color} className="headerStyle">
+    <HeaderStyle color={color} className="headerStyle items-center justify-center ">
       <nav className="headerNav">
-        <div className="headerLogoSpace">
-          <CodeIcon/>
-          <Linki to="/"><p className="nameHeader">Deyverson</p></Linki>
-        </div>
-        <main className="headerLinks">
+        <main className="headerLinks items-center justify-center">
           <div className="navegador">
             {navVisible && <Navegador />} 
           </div> 
@@ -40,7 +36,6 @@ function Header() {
   );
 }
 
-// Estilos Metodologia BEM
 const HeaderStyle = styled.header`
   background-color: ${(props) => props.color || '#4a98bf'};
 `

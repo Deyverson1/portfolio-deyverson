@@ -38,9 +38,9 @@ function Footer() {
         <Link className="text-white hover:underline" to="/Projects">
           {t("Projects")}
         </Link>
-        <Link className="text-white hover:underline" to="/Contact">
+        <a className="text-white hover:underline" href="mailto:deyversongp@gmail.com">
           {t("ContactNav")}
-        </Link>
+        </a>
       </nav>
       <section className="pt-8 lg:pt-0 flex flex-col items-center justify-center w-full">
         <h5 className="text-white">{t("SocialMedia")}</h5>

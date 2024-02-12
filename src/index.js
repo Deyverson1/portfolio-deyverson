@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
     en: { translation: enTranslation },
     es: { translation: esTranslation },
   },
-  lng: 'es', 
+  lng: 'es',
   fallbackLng: 'en',
   interpolation: { escapeValue: false },
 });
@@ -23,7 +23,9 @@ i18n.use(initReactI18next).init({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+  <App/>
+
   </React.StrictMode>
 );
 
