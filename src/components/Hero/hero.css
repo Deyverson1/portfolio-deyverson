@@ -65,19 +65,20 @@
     box-shadow: 0px 0px 50px rgba(0,0,0,01);
 }
 @media screen and (max-width: 768px){
+  
     .imgContainer{
         display: none;
     }
 }
 @media screen and (max-width: 425px){
     .hero{    
-    margin: 5rem 0rem;
+    margin: 3rem 0rem;
     padding: 0;
-    margin-bottom: 0;
+    padding-bottom: 0rem;
     }
     .nameHero{
-        padding: 1rem 2rem;
-        font-size: 35px;
+        padding: 0rem 2rem;
+        font-size: 25px;
         padding-top: 4rem;
     }
     .profesion{
@@ -89,6 +90,10 @@
     }
 }
 @media screen and (max-width: 375px){
+    .nameHero{
+        padding-top: 0;
+     
+    }
     .profesion{
         padding: 0 2rem ;
         font-size: 25px;

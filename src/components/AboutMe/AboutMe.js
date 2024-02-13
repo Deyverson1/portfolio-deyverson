@@ -65,7 +65,7 @@ function AboutMe() {
                     `}
         </SyntaxHighlighter>
         <div className="descriptionMobile">
-          <h3 className="">Deyverson Herrera Valencia</h3>
+        
           <p>
             Mi nombre es Deyverson Herrera, empecé en el mundo de la programacion en 2022, actualmente estudiante de Mecatronica y Desarrollo Web.
           </p>
@@ -96,10 +96,11 @@ const AboutMeContainer = styled.section`
   padding-bottom: 4rem;
   @media screen and (max-width: 768px) {
     margin-bottom: 0;
+    margin-top: 0;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 1rem;
-    padding-top: 2rem;  
+    padding-bottom: 3rem;
+    padding-top: 3rem;  
     }
 `;
 const SectionContainer = styled.section`
