@@ -11,13 +11,13 @@ function Projects() {
         { title: 'Implementación de sensores', description: 'Este proyecto contiene código de Arduino y Processing para la medida con los sensores SHT-30, HC-SR04, Termistor.', image: '/img/Sensores.png' }
     ]
     return (
-        <section className="px-36 ">
+        <section className="lg:px-36 ">
             <header className="pb-8">
                 <h1 className="text-2xl font-medium px-4 tracking-tight">{t("Projects")}</h1>
             </header>
             <main className="flex gap-8 flex-wrap items-center justify-center flex-1">
                 {data.map((dato, index) => (
-                    <article key={index} className="flex flex-col items-center text-center w-5/12 bg-gray-300 rounded-xl">
+                    <article key={index} className="flex flex-col items-center text-center w-full lg:w-5/12 bg-gray-300 rounded-xl">
                         <div className="w-full"><img className="w-full object-cover rounded-t-xl" src={dato.image} alt={`From ${dato.title}`} /></div>
                         <div className="w-full  text-start pb-8">
                             <h3 className="py-4 px-8">{dato.title}</h3>
