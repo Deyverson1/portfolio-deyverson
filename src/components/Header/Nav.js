@@ -38,7 +38,6 @@ const Linki = styled(Link)`
 color: #000000;
 text-decoration: none;
 text-transform: uppercase;
-font-family: 'Poppins';
 font-size: .8925rem;
 padding-right: 1rem;
 letter-spacing:  0.0625rem ;

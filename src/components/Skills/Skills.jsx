@@ -13,7 +13,7 @@ function Skills() {
   return (
     <section className="skills">
       <header className="headerSkills">
-        <h2 className="title">{t("Skills")}</h2>
+        <h2 className="text-2xl font-medium px-8 tracking-tight">{t("Skills")}</h2>
       </header>
       <section className="skillContent">
         <Card className="skillCard" color={color}>
